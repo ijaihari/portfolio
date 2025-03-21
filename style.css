@@ -155,9 +155,9 @@ body a {
 .linkedin-button:hover,
 .github-button:hover {
   cursor: pointer;
-  background-image: linear-gradient(to bottom right, blue, violet);
-  color: white;
-  border: 2px solid darkviolet;
+  color: black;
+  background-color: white;
+  border: 2px solid white;
   transform: translateY(-2px);
 }
 
@@ -318,7 +318,7 @@ body a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
- 
+
   font-size: 1.4rem;
   font-family: "Space Grotesk", sans-serif;
 }
@@ -331,16 +331,19 @@ body a {
   font-size: 1.3rem;
   padding: 5px 0px;
 }
-.act-achiev{
+
+.act-achiev {
   text-align: justify;
   line-height: 1.5;
 }
-.achiev-hl{
+
+.achiev-hl {
   background-image: linear-gradient(to bottom right, blue, violet);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .h3 {
   font-size: 1.3rem;
   padding: 5px 0px;
@@ -412,7 +415,7 @@ body a {
   grid-template-columns: repeat(auto-fit, minmax(330px, 330px));
   justify-content: center;
   gap: 50px;
-  padding:20px 30px;
+  padding: 20px 30px;
 }
 
 .column {
@@ -530,9 +533,9 @@ body a {
 }
 
 .view-links button:hover {
-  background-image: linear-gradient(to bottom right, blue, violet);
-  color: white;
-  border: 2px solid darkviolet;
+  background-color: white;
+  color: black;
+  border: 2px solid white;
 }
 
 /* ======  Achievements ====== */
@@ -548,7 +551,7 @@ body a {
   grid-template-columns: repeat(auto-fit, minmax(330px, 330px));
   justify-content: center;
   gap: 50px;
-  padding:20px 30px;
+  padding: 20px 30px;
 }
 
 .c-container {
@@ -611,9 +614,9 @@ body a {
 }
 
 .link:hover {
-  background-image: linear-gradient(to bottom right, blue, violet);
-  color: whitesmoke;
-  border: 2px solid darkviolet;
+  color: black;
+  background-color: white;
+  border: 2px solid white;
 }
 
 /*=== Contact Me ===*/
@@ -731,9 +734,9 @@ textarea {
 }
 
 .submitbtn:hover {
-  background-image: linear-gradient(to bottom right, blue, violet);
-  color: white;
-  border: 2px solid darkviolet;
+  color: black;
+  background-color: white;
+  border: 2px solid white;
 }
 
 /* ===Footer=== */
@@ -756,7 +759,7 @@ textarea {
   }
 
   .header {
-    
+
     padding: 10px 30px;
   }
 
@@ -784,11 +787,13 @@ textarea {
   .navbar a:active {
     color: #a3a3a3;
   }
+
   .certificates {
-    padding:20px 0px;
+    padding: 20px 0px;
   }
+
   .project-column {
-    padding:20px 0px;
+    padding: 20px 0px;
   }
 }
 
@@ -899,6 +904,7 @@ textarea {
   .tech p {
     padding: 2px 40px;
   }
+
   .s-note strong {
     font-size: 0.9rem;
   }
