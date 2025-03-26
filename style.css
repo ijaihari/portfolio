@@ -43,11 +43,14 @@ body a {
   inset: 0px 0px;
   height: fit-content;
   padding: 15px 70px;
-  background-color: #5900ff;
+  /* 
+  background-color: #5900ff; */
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 99;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.103);
 }
 
 .logo {
@@ -69,8 +72,8 @@ body a {
 
 .navbar a:hover {
   cursor: pointer;
-  color: #5900ff;
-  background-color: white;
+
+  background: linear-gradient(to bottom right, #0000ffcc, #da82eecc);
 }
 
 #menu-icon {
@@ -666,13 +669,15 @@ body a {
 .social i {
   font-size: 2rem;
   color: white;
-  padding: 3px 4.5px 2px 4.5px;
+  padding: 3px 5.5px 2px 5.5px;
   border-radius: 10px;
   margin: 5px 5px 5px 0px;
 }
 
 .social i:hover {
-  background-image: linear-gradient(to bottom right, rgb(0, 68, 255), violet);
+  background-color: #490cdacb;
+  /*  background-imargb(89, 0, 255)near-gradient(to bottom right, rgb(0, 68, 255), violet);
+ */
 }
 
 
@@ -743,7 +748,7 @@ textarea {
 
 .footer {
   font-family: "Space Grotesk", sans-serif;
-  background-image: linear-gradient(to bottom right, blue, rgb(149, 30, 204));
+  background: linear-gradient(to right, #0000ffcc, #470ad6cc);
   padding: 7px 0px;
   color: white;
   text-align: center;
