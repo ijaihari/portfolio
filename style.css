@@ -76,6 +76,7 @@ body a {
   background: linear-gradient(to bottom right, #0000ffcc, #da82eecc);
 }
 
+/*  */
 #menu-icon {
   color: white;
   font-size: 2rem;
@@ -774,14 +775,23 @@ textarea {
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 10px 35px;
+    padding: 10px 25px;
     background-color: white;
+    border-radius: 0px 0px 20px 20px;
+  }
+
+
+
+  .navbar a:hover {
+   background-color: #000000;
+    color: white;
   }
 
   .navbar a {
+    border-radius: 10px;
     display: block;
     margin: 20px 0px;
-    text-align: right;
+    text-align: center;
     color: black;
   }
 
@@ -790,7 +800,7 @@ textarea {
   }
 
   .navbar a:active {
-    color: #a3a3a3;
+    color: white;
   }
 
   .certificates {
