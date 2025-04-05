@@ -62,7 +62,8 @@ body a {
 .pro-bar {
   width: 0%;
   height: 5px;
-  background-image: linear-gradient(to bottom right, red, #ff006a);
+  /*  background-image: linear-gradient(to bottom right, red, #ff006a); */
+  background-color: white;
 }
 
 .logo {
