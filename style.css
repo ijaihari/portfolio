@@ -38,19 +38,31 @@ body a {
 }
 
 /* === Navigation Bar === */
-.header {
+.nav {
   position: fixed;
   inset: 0px 0px;
-  height: fit-content;
-  padding: 15px 70px;
-  /* 
-  background-color: #5900ff; */
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   z-index: 99;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.103);
+  background-color: black;
+  height: fit-content;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 70px;
+}
+
+.pro-container {
+  height: 5px;
+  width: 100%;
+  background-color: #1f1f1f;
+}
+
+.pro-bar {
+  width: 0%;
+  height: 5px;
+  background-image: linear-gradient(to bottom right, red, #ff006a);
 }
 
 .logo {
@@ -72,11 +84,11 @@ body a {
 
 .navbar a:hover {
   cursor: pointer;
-
   background: linear-gradient(to bottom right, #0000ffcc, #da82eecc);
 }
 
 /*  */
+
 #menu-icon {
   color: white;
   font-size: 2rem;
@@ -268,7 +280,6 @@ body a {
   border: 1px solid #ffffff2b;
   border-radius: 20px;
 }
-
 
 .whatido {
   border: 2px solid #ff000080;
@@ -764,8 +775,11 @@ textarea {
     display: block;
   }
 
-  .header {
+  .pro-bar {
+    background-image: linear-gradient(to bottom right, red, rgb(255, 0, 106));
+  }
 
+  .header {
     padding: 10px 30px;
   }
 
@@ -780,10 +794,8 @@ textarea {
     border-radius: 0px 0px 20px 20px;
   }
 
-
-
   .navbar a:hover {
-   background-color: #000000;
+    background-color: #000000;
     color: white;
   }
 
