@@ -1,8 +1,9 @@
 /*==== Robo ====*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
 
-/*==== Space Grotesk ====*/
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+/* === Merriweather === */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -26,7 +27,7 @@ body a {
   color: white;
   text-align: center;
   padding-top: 80px;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .sub-title {
@@ -34,7 +35,7 @@ body a {
   font-size: 1rem;
   text-align: center;
   color: orange;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 /* === Navigation Bar === */
@@ -71,10 +72,11 @@ body a {
   color: #ffffff;
   font-size: 1.7rem;
   font-weight: bold;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .navbar a {
+  font-family: "Lora", serif;
   color: #ffffff;
   padding: 5px 20px;
   border-radius: 50px;
@@ -124,7 +126,7 @@ body a {
   margin-bottom: 0.5%;
   color: transparent;
   -webkit-text-stroke: 0.7px white;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .name {
@@ -140,14 +142,14 @@ body a {
   font-size: 1.3rem;
   color: white;
   margin-bottom: 1%;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .note {
   font-size: 1.1rem;
   margin-bottom: 5%;
   color: grey;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .intro button {
@@ -165,7 +167,7 @@ body a {
   background-color: #000000;
   border: 2px solid rgba(128, 128, 128, 0.149);
   transition: all 0.2s ease-in-out;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .resume-button:hover,
@@ -225,7 +227,7 @@ body a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .proimg img {
@@ -237,7 +239,7 @@ body a {
   padding: 5px 5px 5px 15px;
   font-size: 1.2rem;
   line-height: 1.7;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .now {
@@ -246,7 +248,7 @@ body a {
   border: 2px solid #1ddb1d80;
   background-color: #00ff8834;
   color: white;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .count-section {
@@ -268,13 +270,13 @@ body a {
 .count-sub-section h2 {
   font-size: 1.7rem;
   color: white;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .count-sub-section p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.8rem;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .proline {
@@ -295,7 +297,7 @@ body a {
   text-align: center;
   color: white;
   padding: 7px;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .doline {
@@ -320,7 +322,7 @@ body a {
   font-size: 1.4rem;
   font-weight: bold;
   padding: 10px 0px;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .class {
@@ -336,7 +338,7 @@ body a {
   -webkit-text-fill-color: transparent;
 
   font-size: 1.4rem;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .college-activities {
@@ -364,7 +366,7 @@ body a {
   font-size: 1.3rem;
   padding: 5px 0px;
   color: white;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 /*=== Skills Section ===*/
@@ -409,7 +411,7 @@ body a {
 .s-note strong {
   font-size: 1.3rem;
   color: white;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .tech p {
@@ -471,7 +473,7 @@ body a {
 .procount h2 {
   font-size: 2rem;
   color: white;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .procount p {
@@ -504,7 +506,7 @@ body a {
   color: white;
   font-size: 1.5rem;
   margin: 3px 15px;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .pro-brief {
@@ -545,7 +547,7 @@ body a {
   border-radius: 12px;
   font-weight: bold;
   cursor: pointer;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .view-links button:hover {
@@ -598,7 +600,7 @@ body a {
   font-size: 1.23rem;
   margin: 3px 10px;
   color: white;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .c-about {
@@ -626,7 +628,7 @@ body a {
   border-radius: 12px;
   font-weight: bold;
   cursor: pointer;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .link:hover {
@@ -666,7 +668,7 @@ body a {
 
 .label {
   color: white;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .h2 {
@@ -676,7 +678,7 @@ body a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .social i {
@@ -700,7 +702,7 @@ body a {
   font-size: 1.3rem;
   padding: 0px 0px 10px 0px;
   color: white;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .label {
@@ -708,7 +710,7 @@ body a {
   padding: 5px 0px;
   font-size: 1.3rem;
   display: inline-block;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .user-input {
@@ -717,7 +719,7 @@ body a {
   margin: 5px 0px;
   padding: 3px 5px;
   outline: none;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 input,
@@ -728,14 +730,14 @@ textarea {
   border-radius: 5px;
   outline: none;
   resize: none;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .txtarea {
   padding: 10px 0px 0px 10px;
   width: 305px;
   height: 120px;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .submitbtn {
@@ -748,7 +750,7 @@ textarea {
   color: white;
   background-color: #000000;
   cursor: pointer;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .submitbtn:hover {
@@ -760,7 +762,7 @@ textarea {
 /* ===Footer=== */
 
 .footer {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lora", serif;
   background: linear-gradient(to right, #0000ffcc, #470ad6cc);
   padding: 7px 0px;
   color: white;
