@@ -1,9 +1,5 @@
 /*==== Robo ====*/
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
-
-/* === Merriweather === */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -13,7 +9,11 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #0a0a0a;
 }
 
 body a {
@@ -27,7 +27,7 @@ body a {
   color: white;
   text-align: center;
   padding-top: 80px;
-  font-family: "Lora", serif;
+
 }
 
 .sub-title {
@@ -35,7 +35,7 @@ body a {
   font-size: 1rem;
   text-align: center;
   color: orange;
-  font-family: "Lora", serif;
+
 }
 
 /* === Navigation Bar === */
@@ -43,7 +43,7 @@ body a {
   position: fixed;
   inset: 0px 0px;
   z-index: 99;
-  background-color: black;
+  background-color: #0a0a0a;
   height: fit-content;
 }
 
@@ -63,8 +63,8 @@ body a {
 .pro-bar {
   width: 0%;
   height: 5px;
-  /*  background-image: linear-gradient(to bottom right, red, #ff006a); */
-  background-color: white;
+  background-image: linear-gradient(to bottom right, red, #ff006a);
+
 }
 
 .logo {
@@ -72,22 +72,23 @@ body a {
   color: #ffffff;
   font-size: 1.7rem;
   font-weight: bold;
-  font-family: "Lora", serif;
+
 }
 
 .navbar a {
-  font-family: "Lora", serif;
   color: #ffffff;
-  padding: 5px 20px;
-  border-radius: 50px;
-  margin-left: 30px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-left: 20px;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 .navbar a:hover {
   cursor: pointer;
-  background: linear-gradient(to bottom right, #0000ffcc, #da82eecc);
+  color: black;
+  background-color: white;
+  box-shadow: 0px 0px 10px grey;
 }
 
 /*  */
@@ -101,12 +102,11 @@ body a {
 /*=== Home Section ===*/
 
 .home-container {
-  height: auto;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: black;
   gap: 5%;
   padding: 6.3% 0%;
 }
@@ -126,48 +126,48 @@ body a {
   margin-bottom: 0.5%;
   color: transparent;
   -webkit-text-stroke: 0.7px white;
-  font-family: "Lora", serif;
+
 }
 
 .name {
   font-size: 3.7rem;
   margin-bottom: 1%;
-  background-image: linear-gradient(to bottom right, blue, violet);
+  background: linear-gradient(to right, #6480d3, #eabdff, white);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .role {
-  font-size: 1.3rem;
+  font-size: 2rem;
   color: white;
   margin-bottom: 1%;
-  font-family: "Lora", serif;
+
 }
 
 .note {
   font-size: 1.1rem;
   margin-bottom: 5%;
   color: grey;
-  font-family: "Lora", serif;
+
 }
 
 .intro button {
-  margin: 1% 0% 3% 0;
+  margin: 1% 1% 3% 0;
 }
 
 .linkedin-button,
 .github-button,
 .resume-button {
-  padding: 10px 20px;
+  padding: 10px 40px;
   font-size: 1.2rem;
   font-weight: bold;
-  border-radius: 100px;
+  border-radius: 10px;
   color: white;
-  background-color: #000000;
-  border: 2px solid rgba(128, 128, 128, 0.149);
+  background-color: #0a0a0a;
+  border: 1px solid rgba(128, 128, 128, 0.149);
   transition: all 0.2s ease-in-out;
-  font-family: "Lora", serif;
+
 }
 
 .resume-button:hover,
@@ -176,15 +176,14 @@ body a {
   cursor: pointer;
   color: black;
   background-color: white;
-  border: 2px solid white;
-  transform: translateY(-2px);
+  box-shadow: 0px 0px 10px grey;
 }
 
 /*=== About Section ===*/
 
 .about {
   height: auto;
-  background-color: black;
+  background-color: #0a0a0a;
 }
 
 .about-container {
@@ -204,8 +203,8 @@ body a {
   height: fit-content;
   border-radius: 20px;
   margin: 12% 0% 2% 0%;
-  background-color: black;
-  box-shadow: inset 1px 1px 7px #ffffff35;
+  background-color: #0a0a0a;
+  border: 1px solid #80808030;
   color: white;
   display: grid;
   grid-template-columns: 80px 1fr;
@@ -223,11 +222,11 @@ body a {
 
 .aboutme-right h2 {
   font-size: 2rem;
-  background-image: linear-gradient(to bottom right, blue, violet);
+  background: linear-gradient(to right, #6480d3, #eabdff, white);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Lora", serif;
+
 }
 
 .proimg img {
@@ -239,7 +238,7 @@ body a {
   padding: 5px 5px 5px 15px;
   font-size: 1.2rem;
   line-height: 1.7;
-  font-family: "Lora", serif;
+
 }
 
 .now {
@@ -248,11 +247,11 @@ body a {
   border: 2px solid #1ddb1d80;
   background-color: #00ff8834;
   color: white;
-  font-family: "Lora", serif;
+
 }
 
 .count-section {
-  box-shadow: inset 1px 1px 7px #ffffff0f;
+  border: 1px solid #80808030;
   background-image: linear-gradient(to bottom, #0c0a0a, #0f0f0f);
   border-radius: 20px;
   margin: 2% 0%;
@@ -270,13 +269,13 @@ body a {
 .count-sub-section h2 {
   font-size: 1.7rem;
   color: white;
-  font-family: "Lora", serif;
+
 }
 
 .count-sub-section p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.8rem;
-  font-family: "Lora", serif;
+
 }
 
 .proline {
@@ -285,8 +284,8 @@ body a {
 }
 
 .whatido {
-  border: 2px solid #ff000080;
-  background-color: #ff000034;
+  border: 1px solid #ff000074;
+  background-color: #ff000014;
   border-radius: 20px;
   height: 260px;
   padding: 10px 15px;
@@ -297,7 +296,7 @@ body a {
   text-align: center;
   color: white;
   padding: 7px;
-  font-family: "Lora", serif;
+
 }
 
 .doline {
@@ -322,7 +321,7 @@ body a {
   font-size: 1.4rem;
   font-weight: bold;
   padding: 10px 0px;
-  font-family: "Lora", serif;
+
 }
 
 .class {
@@ -332,13 +331,13 @@ body a {
 }
 
 .mark {
-  background-image: linear-gradient(to bottom right, blue, violet);
+  background: linear-gradient(to right, #6480d3, #eabdff, white);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   font-size: 1.4rem;
-  font-family: "Lora", serif;
+
 }
 
 .college-activities {
@@ -356,7 +355,7 @@ body a {
 }
 
 .achiev-hl {
-  background-image: linear-gradient(to bottom right, blue, violet);
+  background: linear-gradient(to right, #6480d3, #eabdff, white);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -366,14 +365,14 @@ body a {
   font-size: 1.3rem;
   padding: 5px 0px;
   color: white;
-  font-family: "Lora", serif;
+
 }
 
 /*=== Skills Section ===*/
 
 .skill-section {
   height: auto;
-  background-color: black;
+  background-color: #0a0a0a;
   padding: 10px;
 }
 
@@ -393,10 +392,9 @@ body a {
   width: 290px;
   height: 90px;
   margin: 1.5% 1.5% 1.5% 0%;
-  background-color: black;
-  box-shadow: inset 1px 1px 7px #ffffff35;
+  background-color: #0a0a0a;
   border-radius: 15px;
-  border: none;
+  border: 1px solid #80808030;
   display: grid;
   grid-template-columns: 60px 1fr;
   font-size: 1.2rem;
@@ -411,7 +409,7 @@ body a {
 .s-note strong {
   font-size: 1.3rem;
   color: white;
-  font-family: "Lora", serif;
+
 }
 
 .tech p {
@@ -425,7 +423,7 @@ body a {
 /* ===Projects=== */
 
 .project-section {
-  background-color: black;
+  background-color: #0a0a0a;
 }
 
 .project-column {
@@ -440,7 +438,7 @@ body a {
   width: 330px;
   height: 445px;
   border: none;
-  box-shadow: inset .5px .5px 7px #ffffff7c;
+  border: 1px solid #80808030;
   border-radius: 20px;
   display: grid;
   grid-template-rows: repeat(5, auto);
@@ -473,7 +471,7 @@ body a {
 .procount h2 {
   font-size: 2rem;
   color: white;
-  font-family: "Lora", serif;
+
 }
 
 .procount p {
@@ -506,7 +504,7 @@ body a {
   color: white;
   font-size: 1.5rem;
   margin: 3px 15px;
-  font-family: "Lora", serif;
+
 }
 
 .pro-brief {
@@ -540,14 +538,14 @@ body a {
 
 .view-links button {
   padding: 5px 30px;
-  background-color: black;
+  background-color: #0a0a0a;
   color: white;
   font-size: 1rem;
   border: 2px solid #8080803b;
   border-radius: 12px;
   font-weight: bold;
   cursor: pointer;
-  font-family: "Lora", serif;
+
 }
 
 .view-links button:hover {
@@ -559,7 +557,7 @@ body a {
 /* ======  Achievements ====== */
 
 .certifi-container {
-  background-color: black;
+  background-color: #0a0a0a;
   height: auto;
   padding: 10px;
 }
@@ -576,8 +574,7 @@ body a {
   width: 330px;
   height: 430px;
   padding-bottom: 10px;
-  border: none;
-  box-shadow: inset .5px .5px 7px #ffffff7c;
+  border: 1px solid #80808030;
   border-radius: 20px;
 
   display: grid;
@@ -600,7 +597,7 @@ body a {
   font-size: 1.23rem;
   margin: 3px 10px;
   color: white;
-  font-family: "Lora", serif;
+
 }
 
 .c-about {
@@ -621,14 +618,14 @@ body a {
 .link {
   margin: 3px 10px;
   padding: 5px 10px;
-  background-color: black;
+  background-color: #0a0a0a;
   color: white;
   font-size: 1rem;
   border: 2px solid #8080803b;
   border-radius: 12px;
   font-weight: bold;
   cursor: pointer;
-  font-family: "Lora", serif;
+
 }
 
 .link:hover {
@@ -640,7 +637,7 @@ body a {
 /*=== Contact Me ===*/
 
 .contact {
-  background-color: #000000;
+  background-color: #0a0a0a;
   height: auto;
   width: 100%;
 }
@@ -668,17 +665,17 @@ body a {
 
 .label {
   color: white;
-  font-family: "Lora", serif;
+
 }
 
 .h2 {
   font-size: 2rem;
   padding: 5px 0px;
-  background-image: linear-gradient(to bottom right, rgb(0, 68, 255), violet);
+  background: linear-gradient(to right, #6480d3, #eabdff, white);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Lora", serif;
+
 }
 
 .social i {
@@ -690,7 +687,8 @@ body a {
 }
 
 .social i:hover {
-  background-color: #490cdacb;
+  color: black;
+  background-color: white;
   /*  background-imargb(89, 0, 255)near-gradient(to bottom right, rgb(0, 68, 255), violet);
  */
 }
@@ -702,7 +700,7 @@ body a {
   font-size: 1.3rem;
   padding: 0px 0px 10px 0px;
   color: white;
-  font-family: "Lora", serif;
+
 }
 
 .label {
@@ -710,7 +708,7 @@ body a {
   padding: 5px 0px;
   font-size: 1.3rem;
   display: inline-block;
-  font-family: "Lora", serif;
+
 }
 
 .user-input {
@@ -719,51 +717,51 @@ body a {
   margin: 5px 0px;
   padding: 3px 5px;
   outline: none;
-  font-family: "Lora", serif;
+
 }
 
 input,
 textarea {
-  background-color: #000000;
-  border: 2px solid #8080803b;
+  background-color: #0a0a0a;
+  border: 1px solid #8080803b;
   color: white;
   border-radius: 5px;
   outline: none;
   resize: none;
-  font-family: "Lora", serif;
+
 }
 
 .txtarea {
   padding: 10px 0px 0px 10px;
   width: 305px;
   height: 120px;
-  font-family: "Lora", serif;
+
 }
 
 .submitbtn {
   margin: 10px 0px;
   padding: 5px 20px;
   font-size: 1rem;
-  border: 2px solid #8080803b;
-  border-radius: 12px;
+  border: 1px solid #8080803b;
+  border-radius: 10px;
   font-weight: bold;
   color: white;
-  background-color: #000000;
+  background-color: #0a0a0a;
   cursor: pointer;
-  font-family: "Lora", serif;
+
 }
 
 .submitbtn:hover {
   color: black;
   background-color: white;
-  border: 2px solid white;
+  border: 1px solid white;
 }
 
 /* ===Footer=== */
 
 .footer {
-  font-family: "Lora", serif;
-  background: linear-gradient(to right, #0000ffcc, #470ad6cc);
+  border: 1px solid rgba(128, 128, 128, 0.362);
+  background-color: transparent;
   padding: 7px 0px;
   color: white;
   text-align: center;
@@ -866,6 +864,10 @@ textarea {
 
 
   /*====== Home  ======*/
+  .home-container {
+    margin: 30px 0px 50px 0px;
+  }
+
   .intro {
     flex-basis: 700px;
     margin: 60px 30px 0px 30px;
