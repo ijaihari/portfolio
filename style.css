@@ -877,6 +877,7 @@ textarea {
   .greet {
     font-size: 2rem;
     color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
     -webkit-text-stroke: 0.7px white;
   }
 
