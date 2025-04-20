@@ -119,6 +119,7 @@ body a {
 .jtag {
   padding: 10px;
   flex-basis: 500px;
+  max-width: 100%;
 }
 
 .greet {
@@ -183,8 +184,9 @@ body a {
 /*=== About Section ===*/
 
 .about {
-  height: auto;
+  height: fit-content;
   background-color: #0a0a0a;
+  
 }
 
 .about-container {
@@ -438,17 +440,12 @@ body a {
 .column {
   width: 330px;
   height: 445px;
-  border: none;
   border: 1px solid #80808030;
-  border-radius: 20px;
+  border-radius: 25px;
   display: grid;
   grid-template-rows: repeat(5, auto);
   justify-content: center;
   transition: all .2s ease-in-out;
-}
-
-.column:hover {
-  transform: scale(1.05);
 }
 
 .align-pro {
@@ -496,9 +493,10 @@ body a {
 
 .project-image {
   width: 330px;
+  padding: 10px 10px 0px;
   height: auto;
   border: none;
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 25px 25px;
 }
 
 .pro-title {
@@ -534,25 +532,25 @@ body a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 12px;
+  gap: 5px;
 }
 
 .view-links button {
-  padding: 5px 30px;
+  padding: 7px 32px;
   background-color: #0a0a0a;
   color: white;
   font-size: 1rem;
-  border: 2px solid #8080803b;
-  border-radius: 12px;
+  border: 1px solid #8080803b;
+  border-radius: 15px;
   font-weight: bold;
   cursor: pointer;
 
 }
 
 .view-links button:hover {
+  box-shadow: 0px 0px 10px grey;
   background-color: white;
   color: black;
-  border: 2px solid white;
 }
 
 /* ======  Achievements ====== */
@@ -574,23 +572,20 @@ body a {
 .c-container {
   width: 330px;
   height: 430px;
-  padding-bottom: 10px;
   border: 1px solid #80808030;
-  border-radius: 20px;
+  border-radius: 25px;
 
   display: grid;
   grid-template-rows: repeat(5, auto);
-  transition: all .2s ease-in-out;
+
 }
 
-.c-container:hover {
-  transform: scale(1.05);
-}
+
 
 .c-image {
   width: 330px;
   height: 233.4px;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 25px 25px 0px 0px;
   background-color: white;
 }
 
@@ -617,16 +612,23 @@ body a {
 }
 
 .link {
+  display: flex;
+  align-items: center;
+  width: auto;
   margin: 3px 10px;
-  padding: 5px 10px;
+  padding: 7px 77px;
   background-color: #0a0a0a;
   color: white;
   font-size: 1rem;
   border: 2px solid #8080803b;
-  border-radius: 12px;
+  border-radius: 15px;
   font-weight: bold;
   cursor: pointer;
 
+}
+
+.bx-right-top-arrow-circle {
+  padding-left: 10px;
 }
 
 .link:hover {
