@@ -233,7 +233,8 @@ body a {
 }
 
 .proimg img {
-  padding: 2px;
+  object-fit: cover;
+  padding: 0px;
   border-radius: 100px;
 }
 
