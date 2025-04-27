@@ -581,8 +581,6 @@ body a {
 
 }
 
-
-
 .c-image {
   width: 330px;
   height: 233.4px;
@@ -609,7 +607,6 @@ body a {
   color: white;
   font-size: 1.1rem;
   font-weight: bold;
-
 }
 
 .link {
@@ -635,7 +632,7 @@ body a {
 .link:hover {
   color: black;
   background-color: white;
-  border: 2px solid white;
+  box-shadow: 0px 0px 10px grey;
 }
 
 /*=== Contact Me ===*/
@@ -759,6 +756,7 @@ textarea {
   color: black;
   background-color: white;
   border: 1px solid white;
+  box-shadow: 0px 0px 10px grey;
 }
 
 /* ===Footer=== */
@@ -771,7 +769,6 @@ textarea {
   text-align: center;
   font-weight: bold;
 }
-
 
 /* ================= Media Query for 950px ================= */
 
@@ -844,8 +841,6 @@ textarea {
 
 }
 
-
-
 /* ================= Media Query for 590px ================= */
 
 @media (max-width:590px) {
@@ -865,7 +860,6 @@ textarea {
 /* ================= Media Query for 450px ================= */
 
 @media (max-width: 490px) {
-
 
   /*====== Home  ======*/
   .home-container {
@@ -988,6 +982,7 @@ textarea {
   }
 
   /*====== Projects ======*/
+  
   .pro-title {
     font-size: 1.3rem;
   }
