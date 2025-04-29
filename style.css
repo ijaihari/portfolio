@@ -494,10 +494,10 @@ body a {
 
 .project-image {
   width: 330px;
-  padding: 10px 10px 0px;
+  padding: 10px 10px 10px;
   height: auto;
   border: none;
-  border-radius: 25px 25px;
+  border-radius: 20px;
 }
 
 .pro-title {
