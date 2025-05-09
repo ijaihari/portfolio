@@ -1,5 +1,5 @@
-/*==== Robo ====*/
-
+/*====  ====*/
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -11,7 +11,7 @@ html {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
- 
+
 body {
   background-color: #0a0a0a;
 }
@@ -34,8 +34,8 @@ body a {
   padding: 10px 10px;
   font-size: 1rem;
   text-align: center;
-  color: orange;
-
+  color: yellow;
+  font-family: "JetBrains Mono", monospace;
 }
 
 /* === Navigation Bar === */
@@ -55,27 +55,28 @@ body a {
 }
 
 .pro-container {
-  height: 5px;
+  height: 3px;
   width: 100%;
   background-color: #1f1f1f;
 }
 
 .pro-bar {
   width: 0%;
-  height: 5px;
-  background-image: linear-gradient(to bottom right, red, #ff006a);
-
+  height: 3px;
+  /* background-image: linear-gradient(to bottom right, red, #ff006a); */
+  background-color: white;
 }
 
 .logo {
+  font-family: "JetBrains Mono", monospace;
   text-decoration: none;
   color: #ffffff;
   font-size: 1.7rem;
   font-weight: bold;
-
 }
 
 .navbar a {
+
   color: #ffffff;
   padding: 10px 20px;
   border-radius: 25px;
@@ -144,7 +145,7 @@ body a {
   font-size: 2rem;
   color: white;
   margin-bottom: 1%;
-
+  font-family: "JetBrains Mono", monospace;
 }
 
 .note {
@@ -161,6 +162,7 @@ body a {
 .linkedin-button,
 .github-button,
 .resume-button {
+
   padding: 10px 40px;
   font-size: 1.2rem;
   font-weight: bold;
@@ -186,7 +188,7 @@ body a {
 .about {
   height: fit-content;
   background-color: #0a0a0a;
-  
+
 }
 
 .about-container {
@@ -288,12 +290,11 @@ body a {
 }
 
 .whatido {
-  border: 1px solid #ff000074;
-  background-color: #ff000014;
+  border: 1px solid #6480d3;
+  background-color: #6480d360;
   border-radius: 20px;
-  height: 260px;
+  height: fit-content;
   padding: 10px 15px;
-  margin-bottom: 20px;
 }
 
 .do-title {
@@ -421,6 +422,8 @@ body a {
 }
 
 .ab-note {
+  font-size: 1rem;
+  font-family: "JetBrains Mono", monospace;
   color: grey;
 }
 
@@ -508,7 +511,7 @@ body a {
 }
 
 .pro-brief {
-  font-size: 1rem;
+  font-size: .9rem;
   color: #a3a3a3;
   text-align: justify;
   margin: 3px 15px;
@@ -522,9 +525,10 @@ body a {
   color: white;
   margin-right: 5px;
   padding: 3px 7px;
-  font-size: .8rem;
+  font-size: .7rem;
   font-weight: bold;
-  background-image: linear-gradient(to bottom right, red, rgb(255, 0, 106));
+  border: 1px solid #6480d3;
+  background-color:#6480d362;
   border-radius: 5px;
 }
 
@@ -537,7 +541,9 @@ body a {
 }
 
 .view-links button {
-  padding: 7px 32px;
+  font-family: "JetBrains Mono", monospace;
+  text-align: center;
+  padding: 7px 30px;
   background-color: #0a0a0a;
   color: white;
   font-size: 1rem;
@@ -545,7 +551,6 @@ body a {
   border-radius: 15px;
   font-weight: bold;
   cursor: pointer;
-
 }
 
 .view-links button:hover {
@@ -596,7 +601,7 @@ body a {
 }
 
 .c-about {
-  font-size: 1rem;
+  font-size: .9rem;
   margin: 3px 10px;
   color: grey;
   text-align: justify;
@@ -605,14 +610,16 @@ body a {
 
 .outcome {
   color: white;
-  font-size: 1.1rem;
+  font-size: .9rem;
   font-weight: bold;
 }
 
 .link {
-  display: flex;
+  font-family: "JetBrains Mono", monospace;
+  display: grid;
+  grid-template-columns: 1fr 2px;
+  gap: 6px;
   align-items: center;
-  width: auto;
   margin: 3px 10px;
   padding: 7px 77px;
   background-color: #0a0a0a;
@@ -622,11 +629,6 @@ body a {
   border-radius: 15px;
   font-weight: bold;
   cursor: pointer;
-
-}
-
-.bx-right-top-arrow-circle {
-  padding-left: 10px;
 }
 
 .link:hover {
@@ -723,6 +725,7 @@ body a {
 
 input,
 textarea {
+  font-family: "JetBrains Mono", monospace;
   background-color: #0a0a0a;
   border: 1px solid #8080803b;
   color: white;
@@ -740,6 +743,7 @@ textarea {
 }
 
 .submitbtn {
+  font-family: "JetBrains Mono", monospace;
   margin: 10px 0px;
   padding: 5px 20px;
   font-size: 1rem;
@@ -762,6 +766,7 @@ textarea {
 /* ===Footer=== */
 
 .footer {
+  font-family: "JetBrains Mono", monospace;
   border: 1px solid rgba(128, 128, 128, 0.362);
   background-color: transparent;
   padding: 7px 0px;
@@ -941,7 +946,7 @@ textarea {
   }
 
   .ab-note {
-    font-size: .9rem;
+    font-size: .8rem;
   }
 
   /*====== Contact ======*/
@@ -982,7 +987,7 @@ textarea {
   }
 
   /*====== Projects ======*/
-  
+
   .pro-title {
     font-size: 1.3rem;
   }
