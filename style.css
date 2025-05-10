@@ -63,16 +63,16 @@ body a {
 .pro-bar {
   width: 0%;
   height: 3px;
-  /* background-image: linear-gradient(to bottom right, red, #ff006a); */
-  background-color: white;
+  background-image: linear-gradient(to bottom right, red, #ff006a);
+
 }
 
 .logo {
-  font-family: "JetBrains Mono", monospace;
+  font-family: 'Chomsky', sans-serif;
   text-decoration: none;
   color: #ffffff;
-  font-size: 1.7rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: normal;
 }
 
 .navbar a {
@@ -290,8 +290,8 @@ body a {
 }
 
 .whatido {
-  border: 1px solid #6480d3;
-  background-color: #6480d360;
+  border: 1px solid royalblue;
+  background-color: #4169e160;
   border-radius: 20px;
   height: fit-content;
   padding: 10px 15px;
@@ -523,13 +523,13 @@ body a {
 
 .skills-tab span {
   color: white;
-  margin-right: 5px;
+  margin-right: 2px;
   padding: 3px 7px;
   font-size: .7rem;
   font-weight: bold;
-  border: 1px solid #6480d3;
-  background-color:#6480d362;
-  border-radius: 5px;
+  border: 1px solid red;
+  background-color:rgba(255, 0, 0, 0.27);
+  border-radius: 25px;
 }
 
 .view-links {
@@ -625,7 +625,7 @@ body a {
   background-color: #0a0a0a;
   color: white;
   font-size: 1rem;
-  border: 2px solid #8080803b;
+  border: 1px solid #8080803b;
   border-radius: 15px;
   font-weight: bold;
   cursor: pointer;
@@ -766,7 +766,6 @@ textarea {
 /* ===Footer=== */
 
 .footer {
-  font-family: "JetBrains Mono", monospace;
   border: 1px solid rgba(128, 128, 128, 0.362);
   background-color: transparent;
   padding: 7px 0px;
