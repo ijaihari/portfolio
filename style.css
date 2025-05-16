@@ -444,7 +444,7 @@ body a {
 
 .column {
   width: 330px;
-  height: 445px;
+  height: 485px;
   border: 1px solid #80808030;
   border-radius: 25px;
   display: grid;
@@ -524,7 +524,7 @@ body a {
 
 .skills-tab span {
   color: white;
-  margin-right: 2px;
+  margin-right: 1px;
   padding: 3px 7px;
   font-size: .7rem;
   font-weight: bold;
