@@ -28,7 +28,7 @@ function handleScroll() {
   const scrollableHeight = scrollHeight - clientHeight;
   const scrollPercentage = (scrollTop / scrollableHeight) * 100;
   proBar.style.width = `${scrollPercentage}%`
-  console.log(`Scrolled: ${scrollPercentage.toFixed(2)}%`);
+/*   console.log(`Scrolled: ${scrollPercentage.toFixed(2)}%`); */
 }
 
 window.addEventListener("scroll", handleScroll);
