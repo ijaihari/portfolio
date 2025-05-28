@@ -7,7 +7,7 @@ function Hero() {
                     <h1>I'm Jai Hari Nataraj</h1>
                     <h2>A Front-End Engineer</h2>
                 </section>
-                <section className="small-about">
+                 <section className="small-about">
                     <p>Building scalable websites with component-based architectures and optimized state management. I engineer responsive, accessible web applications that ensure seamless user experiences and handle dynamic data flows efficiently.</p>
                 </section>
                 <section className="hero-links">
