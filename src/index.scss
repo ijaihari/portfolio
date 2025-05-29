@@ -4,17 +4,11 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
- font-family: "Rubik", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 body {
-
-  /*  background-color: #F5F5F7; */
-
-  background-color: #0a0a0a; // Equivalent to bg-neutral-950
-  /*  background-image: radial-gradient(ellipse 80% 80% at 50% -20%,
-      #7877c64d,
-      #ffffff00); */
+  background-color: #0a0a0a;
 }
 
 button {
@@ -203,7 +197,7 @@ a {
 
 .skill-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: repeat(auto-fit, 1fr);
   justify-content: center;
   align-items: center;
@@ -216,10 +210,10 @@ a {
   align-items: center;
   gap: 10px;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 400;
   background-color: #0a0a0a;
   border: 1px solid #8080803d;
-  padding: 15px 15px;
+  padding: 10px 15px;
   border-radius: 7px;
 }
