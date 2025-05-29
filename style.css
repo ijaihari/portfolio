@@ -290,8 +290,8 @@ body a {
 }
 
 .whatido {
-  border: 1px solid royalblue;
-  background-color: #4169e160;
+  border: 1px solid rgba(65, 105, 225, 0.373);
+  background-color: #4169e12f;
   border-radius: 20px;
   height: fit-content;
   padding: 10px 15px;
@@ -301,7 +301,6 @@ body a {
   text-align: center;
   color: white;
   padding: 7px;
-
 }
 
 .doline {
@@ -412,6 +411,7 @@ body a {
 
 .s-note strong {
   font-size: 1.3rem;
+  font-weight: 500;
   color: white;
 
 }
@@ -422,7 +422,6 @@ body a {
 
 .ab-note {
   font-size: 1rem;
-  font-family: "JetBrains Mono", monospace;
   color: grey;
 }
 
