@@ -1,6 +1,6 @@
 /*====  ====*/
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-@import url('https://fonts.cdnfonts.com/css/chomsky');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -10,7 +10,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+   font-family: "Rubik", sans-serif;
 }
 
 body {
@@ -25,6 +25,7 @@ body a {
 
 .h1 {
   font-size: 3rem;
+  font-weight: 500;
   color: white;
   text-align: center;
   padding-top: 80px;
@@ -69,11 +70,11 @@ body a {
 }
 
 .logo {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Rubik", sans-serif;
   text-decoration: none;
   color: #ffffff;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .navbar a {
@@ -82,7 +83,7 @@ body a {
   padding: 10px 20px;
   border-radius: 25px;
   margin-left: 20px;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1.2rem;
 }
 
@@ -128,9 +129,8 @@ body a {
   font-size: 2.7rem;
   margin-bottom: 0.5%;
   color: transparent;
-  font-family: Arial, Helvetica, sans-serif;
+   font-family: "Rubik", sans-serif;
   -webkit-text-stroke: 0.7px white;
-
 }
 
 .name {
@@ -145,8 +145,7 @@ body a {
 .role {
   font-size: 2rem;
   color: white;
-  margin-bottom: 1%;
-  font-family: "JetBrains Mono", monospace;
+  margin-bottom: 1%; font-family: "Rubik", sans-serif;
 }
 
 .note {
@@ -166,7 +165,7 @@ body a {
 
   padding: 10px 40px;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 500;
   border-radius: 10px;
   color: white;
   background-color: #0a0a0a;
@@ -325,7 +324,7 @@ body a {
 .deg {
   color: white;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: 500;
   padding: 10px 0px;
 
 }
@@ -371,7 +370,6 @@ body a {
   font-size: 1.3rem;
   padding: 5px 0px;
   color: white;
-
 }
 
 /*=== Skills Section ===*/
@@ -527,7 +525,7 @@ body a {
   margin-right: 1px;
   padding: 3px 7px;
   font-size: .7rem;
-  font-weight: bold;
+  font-weight: 500;
   border: 1px solid red;
   background-color: rgba(255, 0, 0, 0.27);
   border-radius: 25px;
@@ -598,7 +596,6 @@ body a {
   font-size: 1.23rem;
   margin: 3px 10px;
   color: white;
-
 }
 
 .c-about {
@@ -669,7 +666,6 @@ body a {
 
 .label {
   color: white;
-
 }
 
 .h2 {
@@ -712,7 +708,6 @@ body a {
   padding: 5px 0px;
   font-size: 1.3rem;
   display: inline-block;
-
 }
 
 .user-input {
@@ -721,7 +716,6 @@ body a {
   margin: 5px 0px;
   padding: 3px 5px;
   outline: none;
-
 }
 
 input,
@@ -733,14 +727,12 @@ textarea {
   border-radius: 5px;
   outline: none;
   resize: none;
-
 }
 
 .txtarea {
   padding: 10px 0px 0px 10px;
   width: 305px;
   height: 120px;
-
 }
 
 .submitbtn {
@@ -754,7 +746,6 @@ textarea {
   color: white;
   background-color: #0a0a0a;
   cursor: pointer;
-
 }
 
 .submitbtn:hover {
@@ -772,7 +763,7 @@ textarea {
   padding: 7px 0px;
   color: white;
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 /* ================= Media Query for 950px ================= */
