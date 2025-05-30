@@ -10,7 +10,7 @@ function Projects() {
                     </section>
                 </section>
             </section>
-           
+
         </div>
     );
 }
