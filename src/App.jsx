@@ -6,8 +6,8 @@ import Skills from "./components/Skills";
 function App() {
   return (
     <div className="app-container">
-      <Header />
-      <Hero />
+      {/* <Header />
+      <Hero /> */}
       <Skills />
       <Projects />
     </div>
