@@ -97,7 +97,12 @@
         &:hover {
             background-color: white;
             color: black;
+
             /* box-shadow: 0px 0px 8px grey; */
+            &:first-child {
+                color: white;
+                background-color: royalblue;
+            }
         }
     }
 }
