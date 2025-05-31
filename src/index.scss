@@ -34,9 +34,11 @@ a {
   width: fit-content;
   padding: 7px 9px;
   border-radius: 50px;
-  background-color: #1E1E2C;
+  background-color: #1e1e2c86;
+  backdrop-filter: blur(10px);
   font-size: 1.2rem;
-  border: 1px solid #8080803d;
+  border: 1px solid #8080801d;
+  z-index: 99;
 
   .logo {
     a {
@@ -81,7 +83,7 @@ a {
       border: 1px solid white;
       font-size: .9rem;
       border-radius: 20px;
-      padding: 10px 15px 9px;
+      padding: 10px 15px;
       font-weight: 600;
       background-color: white;
       transition: box-shadow 0.3s ease;
@@ -103,7 +105,8 @@ a {
   background-image: radial-gradient(ellipse 80% 80% at 50% -20%,
       rgba(120, 119, 198, 0.3),
       rgba(255, 255, 255, 0));
-  height: 90vh;
+
+  height: 100vh;
   padding: 2% 10%;
   display: flex;
   flex-direction: column;
@@ -122,13 +125,14 @@ a {
 
     h1 {
       font-size: 5rem;
-      background-image: linear-gradient(to bottom right, rgb(147, 147, 255), rgb(169, 218, 218));
+      background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
     h2 {
+      font-weight: 450;
       font-size: 3rem;
       color: white;
 
@@ -155,18 +159,17 @@ a {
 
     button {
       font-size: 1.2rem;
-      font-weight: bold;
-      padding: 10px 50px 11px;
+      font-weight: 500;
+      padding: 10px 50px;
       border-radius: 7px;
-      border: 1px solid #8080803d;
+      border: 1px solid #8080801d;
       color: white;
-      background-color: transparent;
+      background-color: #1e1e2c86;
       transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 
       &:hover {
-        box-shadow: 0px 0px 8px grey;
+        /*  box-shadow: 0px 0px 8px grey; */
         background-color: white;
-        transform: scale(1.05);
         color: black;
       }
 
@@ -188,32 +191,10 @@ a {
     font-weight: bold;
     margin-bottom: 50px;
     text-align: center;
-    background-image: linear-gradient(to bottom, #9393ff, #a9dada);
+    color: white;
+    /* background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
   }
-}
-
-.skill-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: repeat(auto-fit, 1fr);
-  justify-content: center;
-  align-items: center;
-  gap: 15px 20px;
-}
-
-.skill-tab {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  color: white;
-  font-size: 1.1rem;
-  font-weight: 400;
-  background-color: #0a0a0a;
-  border: 1px solid #8080803d;
-  padding: 10px 15px;
-  border-radius: 7px;
 }

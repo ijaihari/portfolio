@@ -1,6 +1,8 @@
 import '../styles/project.scss';
 import { SlGlobe } from "react-icons/sl";
 import { SiGithub } from "react-icons/si";
+import { FaVideo } from "react-icons/fa";
+
 function Projects() {
     return (
         <div className="sections">
@@ -8,63 +10,61 @@ function Projects() {
             <section className="pro-section">
 
                 <section className="pro-container">
-                    <img className='pro-thumbnail' src="https://res.cloudinary.com/du6eewwsa/image/upload/fl_preserve_transparency/v1748622934/ROAS_Insight_Suite_zgpllo.jpg?_s=public-apps" />
+                    <button className='video-preview'><FaVideo /></button>
+                    <img className='pro-thumbnail' src="https://res.cloudinary.com/du6eewwsa/image/upload/fl_preserve_transparency/v1748622934/ROAS_Insight_Suite_zgpllo.jpg?_s=public-apps" alt='roas-insight-suite' />
                     <section className='pro-tech-stack'>
-                        <div className='stack-title'>Tech Stack</div> <br />
                         <span className='pro-tech-container'>React</span>
+                        <span className='pro-tech-container'>Redux ToolKit</span>
+                        <span className='pro-tech-container'>Router</span>
+                        <span className='pro-tech-container'>Scss</span>
                     </section>
                     <section className='pro-about'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo earum voluptas veniam esse maxime repellat dolorem officiis sit. Quos atque ex iusto optio! Magnam et corrupti illum officiis odit quia!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non cum id necessitatibus expedita neque quod, eum eaque, quasi nobis saepe mollitia, sed explicabo reprehenderit minus consectetur facere veritatis quae?</p>
+
                     </section>
                     <section className='pro-links'>
-                        <button className='pro-link-btn'><SlGlobe /> View preview</button>
-                        <button className='pro-link-btn'><SiGithub /> GitHub</button>
+                        <button className='pro-link-btn'><SlGlobe /> Live preview</button>
+                        <button className='pro-link-btn'><SiGithub /></button>
                     </section>
                 </section>
+
                 <section className="pro-container">
-                    <img className='pro-thumbnail' src="https://res.cloudinary.com/du6eewwsa/image/upload/fl_preserve_transparency/v1748622934/ROAS_Insight_Suite_zgpllo.jpg?_s=public-apps" />
+                    <button className='video-preview'><FaVideo /></button>
+                    <img className='pro-thumbnail' src="https://res.cloudinary.com/du6eewwsa/image/upload/fl_preserve_transparency/v1748622934/ROAS_Insight_Suite_zgpllo.jpg?_s=public-apps" alt='roas-insight-suite' />
                     <section className='pro-tech-stack'>
-
                         <span className='pro-tech-container'>React</span>
+                        <span className='pro-tech-container'>Redux ToolKit</span>
+                        <span className='pro-tech-container'>Router</span>
+                        <span className='pro-tech-container'>Scss</span>
                     </section>
                     <section className='pro-about'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo earum voluptas veniam esse maxime repellat dolorem officiis sit. Quos atque ex iusto optio! Magnam et corrupti illum officiis odit quia!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non cum id necessitatibus expedita neque quod, eum eaque, quasi nobis saepe mollitia, sed explicabo reprehenderit minus consectetur facere veritatis quae?</p>
+
                     </section>
                     <section className='pro-links'>
-                        <button className='pro-link-btn'><SlGlobe /> View preview</button>
-                        <button className='pro-link-btn'><SiGithub /> GitHub</button>
+                        <button className='pro-link-btn'><SlGlobe /> Live preview</button>
+                        <button className='pro-link-btn'><SiGithub /></button>
                     </section>
                 </section>
+
                 <section className="pro-container">
-                    <img className='pro-thumbnail' src="https://res.cloudinary.com/du6eewwsa/image/upload/fl_preserve_transparency/v1748622934/ROAS_Insight_Suite_zgpllo.jpg?_s=public-apps" />
+                    <button className='video-preview'><FaVideo /></button>
+                    <img className='pro-thumbnail' src="https://res.cloudinary.com/du6eewwsa/image/upload/fl_preserve_transparency/v1748622934/ROAS_Insight_Suite_zgpllo.jpg?_s=public-apps" alt='roas-insight-suite' />
                     <section className='pro-tech-stack'>
                         <span className='pro-tech-container'>React</span>
+                        <span className='pro-tech-container'>Redux ToolKit</span>
+                        <span className='pro-tech-container'>Router</span>
+                        <span className='pro-tech-container'>Scss</span>
                     </section>
                     <section className='pro-about'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo earum voluptas veniam esse maxime repellat dolorem officiis sit. Quos atque ex iusto optio! Magnam et corrupti illum officiis odit quia!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non cum id necessitatibus expedita neque quod, eum eaque, quasi nobis saepe mollitia, sed explicabo reprehenderit minus consectetur facere veritatis quae?</p>
+
                     </section>
                     <section className='pro-links'>
-                        <button className='pro-link-btn'><SlGlobe /> View preview</button>
-                        <button className='pro-link-btn'><SiGithub /> GitHub</button>
+                        <button className='pro-link-btn'><SlGlobe /> Live preview</button>
+                        <button className='pro-link-btn'><SiGithub /></button>
                     </section>
                 </section>
-                <section className="pro-container">
-                    <img className='pro-thumbnail' src="https://res.cloudinary.com/du6eewwsa/image/upload/fl_preserve_transparency/v1748622934/ROAS_Insight_Suite_zgpllo.jpg?_s=public-apps" />
-                    <section className='pro-tech-stack'>
-                        <span className='pro-tech-container'>React</span>
-                    </section>
-                    <section className='pro-about'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo earum voluptas veniam esse maxime repellat dolorem officiis sit. Quos atque ex iusto optio! Magnam et corrupti illum officiis odit quia!</p>
-                    </section>
-                    <section className='pro-links'>
-                        <button className='pro-link-btn'><SlGlobe /> View preview</button>
-                        <button className='pro-link-btn'><SiGithub /> GitHub</button>
-                    </section>
-                </section>
-
-
-
-
 
 
             </section>

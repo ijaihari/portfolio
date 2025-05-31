@@ -6,11 +6,13 @@
 }
 
 .pro-container {
-    padding: 10px;
-    border-radius: 35px;
+    padding: 10px 10px 9px 10px;
+    border-radius: 35px 35px 30px 30px;
     color: white;
-    background-color: black;
-    border: 1px solid #8080803d;
+    background-color: #26263b30;
+    border: 1px solid #8080801d;
+    box-shadow: inset 0px 0px 10px rgba(128, 128, 128, 0.034);
+    position: relative;
 
     img {
         width: 358px;
@@ -18,33 +20,66 @@
         border-radius: 25px;
     }
 
+    .video-preview {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 1rem;
+        display: flex;
+        place-content: center;
+        padding: 8px;
+        border-radius: 20px;
+        border: 1px solid #8080801d;
+        color: white;
+        background-color: #1e1e2c86;
+
+        &:hover {
+            background-color: #1e1e2c;
+        }
+    }
+
     .pro-tech-stack {
-        margin: 5px 0px;
-        padding: 5px 5px 6px 5px;
-        border-radius: 5px;
-        background: linear-gradient(to right bottom, red, rgb(255, 68, 0));
+        display: grid;
+        gap: 4px;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+        margin-top: 10px;
+        padding: 5px;
+        border: 1px dotted #8080801e;
+        border-radius: 15px;
+        background-color: #26263b30;
 
-       
-
-        span {
-            padding: 2px 7px;
-            border-radius: 10px;
+        .pro-tech-container {
+            text-align: center;
+            padding: 3px 7px;
+            border-radius: 15px;
             font-size: .9rem;
             font-weight: 500;
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: #1e1e2c86;
+            border: 1px solid #8080801d;
         }
+    }
+
+    .pro-about {
+        margin-top: 10px;
+        padding: 0px 5px;
+        margin-bottom: -5px;
+        color: white;
+        text-align: justify;
+        line-height: 1.3;
     }
 
     .pro-links {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        height: fit-content;
+        grid-template-columns: 1fr;
         grid-auto-flow: column;
+        margin-top: 10px;
         gap: 5px;
-
     }
 
-    button {
+    .pro-link-btn {
         display: flex;
         justify-content: center;
         gap: 7px;
@@ -52,17 +87,17 @@
         margin-top: 10px;
         font-size: 1rem;
         font-weight: 500;
-        border: 1px solid #8080803d;
+        border-radius: 20px;
+        border: 1px solid #8080801d;
         color: white;
-        background-color: transparent;
+        background-color: #1e1e2c86;
         transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
         padding: 10px 15px;
-        border-radius: 20px;
 
         &:hover {
-            box-shadow: 0px 0px 8px grey;
             background-color: white;
             color: black;
+            /* box-shadow: 0px 0px 8px grey; */
         }
     }
 }

@@ -1,3 +1,4 @@
+import '../styles/skills.scss';
 import { skills } from "../data/skills";
 
 function Skills() {
