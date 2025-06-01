@@ -6,17 +6,15 @@
 }
 
 .pro-container {
-    padding: 10px 10px 9px 10px;
+    padding: 10px;
     border-radius: 35px 35px 30px 30px;
     color: white;
     background-color: #0F0F13;
     border: 1px solid #8080801d;
-    box-shadow: inset 0px 0px 10px rgba(128, 128, 128, 0.034);
     position: relative;
-    transition: all 0.3s ease;
 
     &:hover {
-        transform: scale(1.05);
+        box-shadow: inset 0px 0px 10px rgba(178, 178, 178, 0.15);
     }
 
     img {
@@ -97,12 +95,18 @@
         border: 1px solid #8080801d;
         color: white;
         background-color: #1e1e2c86;
-        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        transition: all 0.3s ease;
         padding: 10px 15px;
 
         &:hover {
+            &:first-child {
+                color: white;
+                background-color: royalblue;
+            }
+
             background-color: white;
             color: black;
+
         }
     }
 }

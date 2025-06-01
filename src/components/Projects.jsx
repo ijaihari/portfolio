@@ -2,72 +2,51 @@ import '../styles/project.scss';
 import { SlGlobe } from "react-icons/sl";
 import { SiGithub } from "react-icons/si";
 import { FaVideo } from "react-icons/fa";
+import { projects } from '../data/projects';
+
+const handleClick = (url) => {
+    if (url) window.open(url, '_blank');
+};
+
 function Projects() {
     return (
         <div className="sections">
             <h1 className="title">Projects</h1>
             <section className="pro-section">
+                {projects.map((project, index) => (
+                    <section className="pro-container" key={index}>
+                        <button
+                            className="video-preview"
+                            onClick={() => handleClick(project.video)}
+                            disabled={!project.video}
+                            title={project.video ? "Watch video preview" : "No video available"}
+                        >
+                            <FaVideo />
+                        </button>
 
-                <section className="pro-container">
-                    <button className='video-preview'><FaVideo /></button>
-                    <img className='pro-thumbnail' src="https://res.cloudinary.com/du6eewwsa/image/upload/fl_preserve_transparency/v1748622934/ROAS_Insight_Suite_zgpllo.jpg?_s=public-apps" alt='roas-insight-suite' />
-                    <section className='pro-tech-stack'>
-                        <span className='pro-tech-container'>React</span>
-                        <span className='pro-tech-container'>Redux ToolKit</span>
-                        <span className='pro-tech-container'>Router</span>
-                        <span className='pro-tech-container'>Scss</span>
-                    </section>
-                    <section className='pro-about'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non cum id necessitatibus expedita neque quod, eum eaque, quasi nobis saepe mollitia, sed explicabo reprehenderit minus consectetur facere veritatis quae?</p>
+                        <img className="pro-thumbnail" src={project.thumbmail} alt={project.proName} />
 
-                    </section>
-                    <section className='pro-links'>
-                        <button className='pro-link-btn'><SlGlobe /> Live preview</button>
-                        <button className='pro-link-btn'><SiGithub /></button>
-                    </section>
-                </section>
+                        <section className="pro-tech-stack">
+                            {project.techStack.map((tech, i) => (
+                                <span className="pro-tech-container" key={i}>{tech}</span>
+                            ))}
+                        </section>
 
-                <section className="pro-container">
-                    <button className='video-preview'><FaVideo /></button>
-                    <img className='pro-thumbnail' src="https://res.cloudinary.com/du6eewwsa/image/upload/fl_preserve_transparency/v1748622934/ROAS_Insight_Suite_zgpllo.jpg?_s=public-apps" alt='roas-insight-suite' />
-                    <section className='pro-tech-stack'>
-                        <span className='pro-tech-container'>React</span>
-                        <span className='pro-tech-container'>Redux ToolKit</span>
-                        <span className='pro-tech-container'>Router</span>
-                        <span className='pro-tech-container'>Scss</span>
-                    </section>
-                    <section className='pro-about'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non cum id necessitatibus expedita neque quod, eum eaque, quasi nobis saepe mollitia, sed explicabo reprehenderit minus consectetur facere veritatis quae?</p>
+                        <section className="pro-about">
+                            <p>{project.about}</p>
+                        </section>
 
+                        <section className="pro-links">
+                            <button className="pro-link-btn" onClick={() => handleClick(project.preview)}>
+                                <SlGlobe /> Live preview
+                            </button>
+                            <button className="pro-link-btn" onClick={() => handleClick(project.github)}>
+                                <SiGithub />
+                            </button>
+                        </section>
                     </section>
-                    <section className='pro-links'>
-                        <button className='pro-link-btn'><SlGlobe /> Live preview</button>
-                        <button className='pro-link-btn'><SiGithub /></button>
-                    </section>
-                </section>
-
-                <section className="pro-container">
-                    <button className='video-preview'><FaVideo /></button>
-                    <img className='pro-thumbnail' src="https://res.cloudinary.com/du6eewwsa/image/upload/fl_preserve_transparency/v1748622934/ROAS_Insight_Suite_zgpllo.jpg?_s=public-apps" alt='roas-insight-suite' />
-                    <section className='pro-tech-stack'>
-                        <span className='pro-tech-container'>React</span>
-                        <span className='pro-tech-container'>Redux ToolKit</span>
-                        <span className='pro-tech-container'>Router</span>
-                        <span className='pro-tech-container'>Scss</span>
-                    </section>
-                    <section className='pro-about'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non cum id necessitatibus expedita neque quod, eum eaque, quasi nobis saepe mollitia, sed explicabo reprehenderit minus consectetur facere veritatis quae?</p>
-
-                    </section>
-                    <section className='pro-links'>
-                        <button className='pro-link-btn'><SlGlobe /> Live preview</button>
-                        <button className='pro-link-btn'><SiGithub /></button>
-                    </section>
-                </section>
-
-
+                ))}
             </section>
-
         </div>
     );
 }
