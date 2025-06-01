@@ -9,10 +9,15 @@
     padding: 10px 10px 9px 10px;
     border-radius: 35px 35px 30px 30px;
     color: white;
-    background-color: #26263b30;
+    background-color: #0F0F13;
     border: 1px solid #8080801d;
     box-shadow: inset 0px 0px 10px rgba(128, 128, 128, 0.034);
     position: relative;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 
     img {
         width: 358px;
@@ -32,6 +37,7 @@
         border: 1px solid #8080801d;
         color: white;
         background-color: #1e1e2c86;
+        z-index: 1;
 
         &:hover {
             background-color: #1e1e2c;
@@ -82,7 +88,7 @@
     .pro-link-btn {
         display: flex;
         justify-content: center;
-        gap: 7px;
+        gap: 5px;
         align-items: center;
         margin-top: 10px;
         font-size: 1rem;
@@ -97,12 +103,6 @@
         &:hover {
             background-color: white;
             color: black;
-
-            /* box-shadow: 0px 0px 8px grey; */
-            &:first-child {
-                color: white;
-                background-color: royalblue;
-            }
         }
     }
 }

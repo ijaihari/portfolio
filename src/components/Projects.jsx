@@ -2,7 +2,6 @@ import '../styles/project.scss';
 import { SlGlobe } from "react-icons/sl";
 import { SiGithub } from "react-icons/si";
 import { FaVideo } from "react-icons/fa";
-
 function Projects() {
     return (
         <div className="sections">
