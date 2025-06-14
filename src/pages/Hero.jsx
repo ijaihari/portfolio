@@ -1,13 +1,19 @@
+import '../styles/hero.scss';
+import { LuArrowUpRight } from "react-icons/lu";
+
 function Hero() {
     return (
         <div className="hero-section">
-            <div className="hero-greetings">
+            <div className="hero-wrapper">
+                <section className='update-tab'>
+                    <button><p>Checkout my latest project &nbsp;</p><LuArrowUpRight /></button>
+                </section>
                 <section className="greetings">
                     <h3>'Hello World'</h3>
                     <h1>I'm Jai Hari Nataraj</h1>
                     <h2>A Front-End Engineer</h2>
                 </section>
-                 <section className="small-about">
+                <section className="about">
                     <p>Building scalable websites with component-based architectures and optimized state management. I engineer responsive, accessible web applications that ensure seamless user experiences and handle dynamic data flows efficiently.</p>
                 </section>
                 <section className="hero-links">
@@ -16,7 +22,6 @@ function Hero() {
                     <button><i class="fa-solid fa-file"></i> Resume</button>
                 </section>
             </div>
-           
         </div>
     );
 }

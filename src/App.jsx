@@ -1,15 +1,15 @@
-import Header from "./components/Header";
-import Hero from "./components/HeroSection";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import Header from "./pages/Header";
+import Hero from "./pages/Hero";
+import Projects from "./pages/Projects";
+import Skills from "./pages/Skills";
 
 function App() {
   return (
     <div className="app-container">
-      {/* <Header />
-      <Hero /> */}
+      {/* <Header /> */}
+      <Hero />
       <Skills />
-      <Projects />
+     {/*  <Projects /> */}
     </div>
   );
 }

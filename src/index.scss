@@ -1,14 +1,15 @@
+@use './styles/variables' as var;
+@use './styles/mixins';
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
-}
-
-body {
-  background-color: #0a0a0a;
 }
 
 button {
@@ -23,178 +24,14 @@ a {
   position: relative;
 }
 
-.header {
-  position: fixed;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  padding: 7px 9px;
-  border-radius: 50px;
-  background-color: #1e1e2c86;
-  backdrop-filter: blur(10px);
-  font-size: 1.2rem;
-  border: 1px solid #8080801d;
-  z-index: 99;
-
-  .logo {
-    a {
-      color: white;
-    }
-
-    border-radius: 20px;
-    padding: 9px 15px;
-    font-weight: bold;
-    font-size: 1rem;
-
-  }
-
-  .navbar {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 0px 80px;
-
-    a {
-      color: white;
-      font-size: 1rem;
-      border-radius: 20px;
-      padding: 10px 15px 9px;
-      border: 1px solid transparent;
-      transition: background-color 0.3s ease, box-shadow 0.3s ease;
-
-      &:hover {
-        color: black;
-        background-color: white;
-        box-shadow: 0px 0px 8px grey;
-      }
-    }
-
-  }
-
-  .navlinks {
-    display: flex;
-    gap: 5px;
-
-    button {
-      border: 1px solid white;
-      font-size: .9rem;
-      border-radius: 20px;
-      padding: 10px 15px;
-      font-weight: 600;
-      background-color: white;
-      transition: box-shadow 0.3s ease;
-
-      a {
-        color: black;
-      }
-
-      &:hover {
-        box-shadow: 0px 0px 8px grey;
-      }
-
-    }
-  }
+.section {
+  background-color: var.$color-background-primary;
+  padding: 30px 0px;
 }
 
-.hero-greetings {
-  background-color: #0a0a0a; // Equivalent to bg-neutral-950
-  background-image: radial-gradient(ellipse 80% 80% at 50% -20%,
-      rgba(120, 119, 198, 0.3),
-      rgba(255, 255, 255, 0));
-
-  height: 100vh;
-  padding: 2% 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  .greetings {
-    text-align: center;
-    line-height: 1.4;
-
-    h3 {
-      font-size: 2.7rem;
-      color: transparent;
-      -webkit-text-stroke: 1px white;
-    }
-
-    h1 {
-      font-size: 5rem;
-      background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    h2 {
-      font-weight: 450;
-      font-size: 3rem;
-      color: white;
-
-    }
-
-  }
-
-  .small-about {
-    width: 850px;
-    font-size: 0.9rem;
-    margin: 20px 0px 50px;
-    text-align: center;
-    line-height: 1.4;
-
-    p {
-      color: grey;
-    }
-  }
-
-  .hero-links {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-
-    button {
-      font-size: 1.2rem;
-      font-weight: 500;
-      padding: 10px 50px;
-      border-radius: 7px;
-      border: 1px solid #8080801d;
-      color: white;
-      background-color: #1e1e2c86;
-      transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-
-      &:hover {
-        /*  box-shadow: 0px 0px 8px grey; */
-        background-color: white;
-        color: black;
-      }
-
-      i {
-        padding-right: 5px;
-      }
-    }
-  }
-}
-
-.sections {
-  height: fit-content;
-  background-color: transparent;
-  margin: 1% 10%;
-  padding: 50px 0px;
-
-  .title {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-bottom: 50px;
-    text-align: center;
-    color: white;
-    /* background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-  }
+.title {
+  padding-bottom: 2rem;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
 }

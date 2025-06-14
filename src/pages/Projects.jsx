@@ -10,7 +10,7 @@ const handleClick = (url) => {
 
 function Projects() {
     return (
-        <div className="sections">
+        <div className="section">
             <h1 className="title">Projects</h1>
             <section className="pro-section">
                 {projects.map((project, index) => (

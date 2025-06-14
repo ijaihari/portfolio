@@ -1,0 +1,16 @@
+@mixin gradienttext {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin textoutline {
+    color: transparent;
+    -webkit-text-stroke: .8px white;
+}

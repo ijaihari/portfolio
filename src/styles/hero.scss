@@ -1,0 +1,94 @@
+@use '../styles/variables' as var;
+@use '../styles/mixins';
+
+.hero-section {
+    min-height: 100vh;
+    padding: 80px 0px;
+    background-color: var.$color-background-primary;
+
+    .hero-wrapper {
+        margin: 0 auto;
+        max-width: 1050px;
+        width: 90%;
+        @include mixins.flex-center;
+        flex-direction: column;
+
+        .update-tab {
+            margin-top: 10px;
+            @include mixins.flex-center;
+
+
+            button {
+                @include mixins.flex-center;
+                background-color: #13131d82;
+                color: white;
+                font-weight: 500;
+                border: 1px solid var.$color-border;
+                padding: 7px 15px;
+                border-radius: 25px;
+                position: relative;
+                z-index: 3;
+
+                p {
+                    font-size: .8rem;
+                    font-family: var.$font-pt;
+                }
+
+            }
+        }
+
+        .greetings {
+            margin-top: 50px;
+            @include mixins.flex-center;
+            flex-direction: column;
+            gap: 10px;
+
+            h3 {
+                @include mixins.textoutline;
+                font-size: 3.0rem;
+                font-weight: bold;
+            }
+
+            h1 {
+                font-size: 4.5rem;
+                font-weight: bold;
+                background: linear-gradient(135deg, #9333ea, #3b82f6, #06b6d4);
+                @include mixins.gradienttext;
+            }
+
+            h2 {
+                color: white;
+                font-size: 3rem;
+                font-weight: 500;
+            }
+        }
+
+        .about {
+            color: grey;
+            font-size: 1rem;
+            margin-top: 50px;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        .hero-links {
+            margin-top: 50px;
+            @include mixins.flex-center;
+            gap: 15px;
+
+            button {
+                background-color: var.$color-background-secondary;
+                color: white;
+                font-size: 1.2rem;
+                font-weight: 500;
+                padding: 10px 35px;
+                border-radius: 50px;
+                border: 1px solid var.$color-border;
+
+                &:hover {
+                    background-color: var.$color-btn-background;
+                }
+            }
+        }
+    }
+}
