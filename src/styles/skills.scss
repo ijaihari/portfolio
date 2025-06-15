@@ -1,3 +1,6 @@
+@use '../styles/variables' as var;
+@use '../styles/mixins';
+
 .section {
     background-color: var.$color-background-primary;
     padding: 30px 0px;
@@ -33,5 +36,5 @@
     background-color: #26263b30;
     border: 1px solid #8080801d;
     padding: 15px 15px;
-    border-radius: 7px;
+    border-radius: 1rem;
 }

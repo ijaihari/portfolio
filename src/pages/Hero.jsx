@@ -6,7 +6,12 @@ function Hero() {
         <div className="hero-section">
             <div className="hero-wrapper">
                 <section className='update-tab'>
-                    <button><p>Checkout my latest project &nbsp;</p><LuArrowUpRight /></button>
+                    <section className='btn-wrapper'>
+                        <button className="gradient-button">
+                            <p>Checkout my latest project&nbsp;</p>
+                            <LuArrowUpRight />
+                        </button>
+                    </section>
                 </section>
                 <section className="greetings">
                     <h3>'Hello World'</h3>
@@ -14,7 +19,7 @@ function Hero() {
                     <h2>A Front-End Engineer</h2>
                 </section>
                 <section className="about">
-                    <p>Building scalable websites with component-based architectures and optimized state management. I engineer responsive, accessible web applications that ensure seamless user experiences and handle dynamic data flows efficiently.</p>
+                    <p>I engineer responsive, accessible web applications that ensure <br /> seamless user experiences and  handle dynamic data flows efficiently.</p>
                 </section>
                 <section className="hero-links">
                     <button><i class="fa-brands fa-linkedin"></i> LinkedIn</button>
