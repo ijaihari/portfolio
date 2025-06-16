@@ -10,7 +10,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-   font-family: "Rubik", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 body {
@@ -28,7 +28,7 @@ body a {
   font-weight: 500;
   color: white;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 50px;
 
 }
 
@@ -105,13 +105,13 @@ body a {
 /*=== Home Section ===*/
 
 .home-container {
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 5%;
-  padding: 6.3% 0%;
+  padding: 6.3% 0% 3%;
 }
 
 .intro {
@@ -129,7 +129,7 @@ body a {
   font-size: 2.7rem;
   margin-bottom: 0.5%;
   color: transparent;
-   font-family: "Rubik", sans-serif;
+  font-family: "Rubik", sans-serif;
   -webkit-text-stroke: 0.7px white;
 }
 
@@ -145,7 +145,8 @@ body a {
 .role {
   font-size: 2rem;
   color: white;
-  margin-bottom: 1%; font-family: "Rubik", sans-serif;
+  margin-bottom: 1%;
+  font-family: "Rubik", sans-serif;
 }
 
 .note {
@@ -824,6 +825,10 @@ textarea {
 /* ================= Media Query for 768px ================= */
 
 @media (max-width: 768px) {
+  .home-container {
+    margin: 30px 0px 10px 0px;
+  }
+
   .pro-list {
     width: 500px;
   }
@@ -839,6 +844,10 @@ textarea {
 /* ================= Media Query for 590px ================= */
 
 @media (max-width:590px) {
+  .home-container {
+    margin: 30px 0px 10px 0px;
+  }
+
   .pro-list {
     width: 300px;
     flex-direction: column;
@@ -858,8 +867,9 @@ textarea {
 
   /*====== Home  ======*/
   .home-container {
-    margin: 30px 0px 50px 0px;
+    margin: 30px 0px 10px 0px;
   }
+
 
   .intro {
     flex-basis: 700px;
