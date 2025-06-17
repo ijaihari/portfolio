@@ -19,7 +19,7 @@ function Hero() {
                     <h2>A Front-End Engineer</h2>
                 </section>
                 <section className="about">
-                    <p>I engineer responsive, accessible web applications that ensure <br /> seamless user experiences and  handle dynamic data flows efficiently.</p>
+                    <p>I engineer responsive, accessible web applications that ensure <br /> seamless user experiences and  handle dynamic data flows efficiently</p>
                 </section>
                 <section className="hero-links">
                     <button><i class="fa-brands fa-linkedin"></i> LinkedIn</button>
