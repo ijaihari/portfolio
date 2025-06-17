@@ -1,5 +1,4 @@
 import '../styles/hero.scss';
-import { LuArrowUpRight } from "react-icons/lu";
 
 function Hero() {
     return (
@@ -8,14 +7,15 @@ function Hero() {
                 <section className='update-tab'>
                     <section className='btn-wrapper'>
                         <button className="gradient-button">
-                            <p>Checkout my latest project&nbsp;</p>
-                            <LuArrowUpRight />
+                            Checkout my latest project &nbsp;
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </button>
+
                     </section>
                 </section>
                 <section className="greetings">
                     <h3>'Hello World'</h3>
-                    <h1>I'm Jai Hari Nataraj</h1>
+                    <h1>I'm JAI HARI NATARAJ</h1>
                     <h2>A Front-End Engineer</h2>
                 </section>
                 <section className="about">

@@ -1,9 +1,13 @@
 import '../styles/header.scss'
 function Header() {
     return (
-        <div className="header">
+        <section className="header">
             <section className="logo">
-                <a href=""><p>PORTFOLIO </p></a>
+                <a href="">
+                    <span>
+                        <img src="/J.svg" alt="" />
+                    </span>
+                </a>
             </section>
             <section className="navbar">
                 <a href="#home"><p>Home</p></a>
@@ -15,7 +19,7 @@ function Header() {
             <section className="navlinks">
                 <button><a href="#contact">Contact</a></button>
             </section>
-        </div>
+        </section>
     );
 }
 

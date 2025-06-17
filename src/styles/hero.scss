@@ -1,35 +1,57 @@
 @use '../styles/variables' as var;
 @use '../styles/mixins';
 
-.hero-section {
-    min-height: 100vh;
-    padding: 80px 0px;
-    background-color: var.$color-background-primary;
 
-    .hero-wrapper {
-        margin: 0 auto;
-        max-width: 1050px;
-        width: 90%;
-        @include mixins.flex-center;
-        flex-direction: column;
+@supports (background: conic-gradient(from var(--angle))) {
+    @property --angle {
+        syntax: "<angle>";
+        inherits: false;
+        initial-value: 0deg;
+    }
 
-        .update-tab {
-            margin-top: 10px;
+    .hero-section {
+        min-height: 100vh;
+        padding: 100px 0px;
+        background-color: var.$color-background-primary;
 
-            .btn-wrapper {
+        .hero-wrapper {
+            margin: 0 auto;
+            max-width: 1050px;
+            width: 90%;
+            @include mixins.flex-center;
+            flex-direction: column;
+
+            .update-tab {
+                margin-top: 10px;
+
+                .btn-wrapper {
+                    padding: 2px;
+                    border-radius: 1rem;
+                    background-image: conic-gradient(from var(--angle), white, grey, white);
+                    animation: rotate-gradient .5s linear infinite;
+                }
+
+                @keyframes rotate-gradient {
+                    0% {
+                        --angle: 0deg;
+                    }
+
+                    100% {
+                        --angle: 360deg;
+                    }
+                }
 
                 .gradient-button {
                     color: white;
-                    background-color: #111111;
+                    background-color: var.$color-background-secondary;
                     font-style: italic;
+                    font-size: .9rem;
                     font-weight: 500;
-                    @include mixins.flex-center;
                     padding: 5px 15px;
                     border-radius: 15px;
-                    border: 1px solid var.$color-border;
+                    border: none;
                 }
             }
-
         }
 
         .greetings {
@@ -47,7 +69,7 @@
             h1 {
                 font-size: 4.5rem;
                 font-weight: bold;
-                background: linear-gradient(135deg, #9333ea, #3b82f6, #06b6d4);
+                background: linear-gradient(to right, #852BF5 0%, #cf13bf 44%, #d911a9 64%, #ef377f 100%);
                 @include mixins.gradienttext;
             }
 
@@ -82,12 +104,15 @@
                 color: white;
                 font-size: 1.2rem;
                 font-weight: 500;
-                padding: 10px 35px;
+                padding: 15px 35px;
                 border-radius: 1rem;
                 border: 1px solid var.$color-border;
+                transition: all 0.3s ease;
 
                 &:hover {
-                    background-color: var.$color-btn-background;
+                    color: black;
+                    background-color: white;
+                    box-shadow: 0px 0px 8px grey;
                 }
             }
         }
