@@ -22,9 +22,9 @@ function Hero() {
                     <p>I engineer responsive, accessible web applications that ensure <br /> seamless user experiences and  handle dynamic data flows efficiently</p>
                 </section>
                 <section className="hero-links">
+                    <button><i class="fa-solid fa-file"></i> Resume</button>
                     <button><i class="fa-brands fa-linkedin"></i> LinkedIn</button>
                     <button><i class="fa-brands fa-github"></i> GitHub</button>
-                    <button><i class="fa-solid fa-file"></i> Resume</button>
                 </section>
             </div>
         </div>

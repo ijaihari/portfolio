@@ -5,10 +5,33 @@
 .pro-section {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 380px));
-    gap: 27px;
-    margin: 50px 50px;
+    max-width: 1200px;
+    width: 95%;
+    margin: 50px auto;
+    gap: 15px;
+
+    @media (min-width: 350px) {
+        grid-template-columns: repeat(1, minmax(300px, 380px));
+    }
+
+    @media (min-width: 768px) {
+                grid-template-columns: repeat(2, minmax(300px, 380px));
+    }
+
+    @media (min-width: 1024px) {
+        max-width: 1000px;
+        grid-template-columns: repeat(2, minmax(340px, 400px));
+
+    }
+
+    @media (min-width: 1440px) {
+        max-width: 1200px;
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    }
+
+
 }
+
 
 .pro-container {
     padding: 10px;
@@ -30,6 +53,7 @@
         width: 100%;
         height: 230px;
         border-radius: 25px;
+
     }
 
     .video-preview {

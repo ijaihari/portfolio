@@ -15,14 +15,22 @@
 
 .skill-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, .7fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, .9fr));
     grid-template-rows: repeat(auto-fit, 1fr);
     justify-content: center;
     align-items: center;
     gap: 15px;
     margin: 50px auto;
-    max-width: 1200px;
-    width: 90%;
+    width: 85%;
+
+    @media (min-width: 1024px) {
+        max-width: 850px;
+    }
+
+    @media (min-width: 1440px) {
+        max-width: 1200px;
+    }
+
 }
 
 .skill-tab {

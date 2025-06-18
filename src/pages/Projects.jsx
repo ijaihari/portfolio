@@ -14,7 +14,7 @@ function Projects() {
             <h1 className="title">Projects</h1>
             <section className="pro-section">
                 {projects.map((project, index) => (
-                    <a href={project.video} target='_blank'>
+                    <a href={project.preview} target='_blank'>
                         <section className="pro-container" key={index}>
                             <button
                                 className="video-preview"
