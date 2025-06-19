@@ -25,7 +25,7 @@ function About() {
                     </section>
                 </section>
                 <section className='experience'>
-                    <section className='work'>
+                    {/* <section className='work'>
                         <h3 className='work__title'>Experience</h3>
                         <div className='work__job-wrapper'>
                             <div className='role'>
@@ -42,7 +42,8 @@ function About() {
                                 </ul>
                             </div>
                         </div>
-                    </section>
+                       
+                    </section> */}
                     <section className='edu'>
                         <h3 className='edu__title'>Education</h3>
                         <div className='edu__details'>

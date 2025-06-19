@@ -76,7 +76,7 @@
             font-size: 1.2rem;
             padding: 0px 20px 10px;
             text-align: justify;
-            line-height: 1.7;
+            line-height: 1.5;
         }
     }
 }
@@ -89,14 +89,14 @@
         margin-bottom: 10px;
 
         &__title {
-            margin-top: -5px;
             background: linear-gradient(to right, #852BF5 0%, #cf13bf 10%, #d911a9 15%, #ef377f 20%);
             @include mixins.gradienttext;
             font-size: 2.5rem;
-            padding-bottom: 10px;
+
         }
 
         &__job-wrapper {
+            margin-top: 10px;
             padding: 20px;
             border-radius: 2rem;
             border: 1px solid var.$color-border;
@@ -106,8 +106,6 @@
                 display: flex;
                 justify-content: space-between;
             }
-
-
 
             h3 {
                 padding-bottom: 5px;
@@ -119,8 +117,6 @@
                 font-size: 1.2rem;
                 color: grey;
             }
-
-
         }
 
         .time {
@@ -142,7 +138,7 @@
 
                 li {
                     font-size: 1.2rem;
-                    line-height: 1.7;
+                    line-height: 1.5;
                     margin: 0px 20px;
                 }
 
@@ -188,7 +184,7 @@
                 }
 
                 li {
-                    line-height: 1.7;
+                    line-height: 1.5;
                     margin: 0px 20px;
                 }
 
