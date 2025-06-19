@@ -8,6 +8,8 @@ const handleClick = (url) => {
     if (url) window.open(url, '_blank');
 };
 
+
+
 function Projects() {
     return (
         <div className="section">

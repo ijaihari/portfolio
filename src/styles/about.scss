@@ -1,0 +1,198 @@
+@use '../styles/variables' as var;
+@use '../styles/mixins';
+
+.about-container {
+    height: fit-content;
+    background-color: var.$color-background-primary;
+    padding: 30px 0px;
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.me {
+    width: 400px;
+
+    .status {
+        padding: 10px;
+        border-radius: 2rem;
+        border: 1px solid var.$color-border;
+        background-color: var.$color-background-secondary;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        &__image {
+            width: 90px;
+            height: 90px;
+            border-radius: 10rem;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 500;
+
+            p {
+                span {
+                    font-weight: 500;
+                    padding: 2px 10px;
+                    border-radius: 1rem;
+                    color: white;
+                    border: 2px solid #00bb4e;
+                    background-color: #083C24;
+                }
+            }
+        }
+    }
+
+    .myvalue {
+        margin-top: 10px;
+        color: white;
+        padding: 20px 20px 10px;
+        border-radius: 2rem;
+        border: 1px solid var.$color-border;
+        background-color: var.$color-background-secondary;
+
+        h3 {
+            text-align: center;
+            font-size: 1.5rem;
+            padding-bottom: 10px;
+        }
+
+        hr {
+            border: 1px solid var.$color-border;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            color: rgb(255, 255, 255);
+            font-size: 1.2rem;
+            padding: 0px 20px 10px;
+            text-align: justify;
+            line-height: 1.7;
+        }
+    }
+}
+
+.experience {
+    width: 700px;
+
+    .work {
+        width: 100%;
+        margin-bottom: 10px;
+
+        &__title {
+            margin-top: -5px;
+            background: linear-gradient(to right, #852BF5 0%, #cf13bf 10%, #d911a9 15%, #ef377f 20%);
+            @include mixins.gradienttext;
+            font-size: 2.5rem;
+            padding-bottom: 10px;
+        }
+
+        &__job-wrapper {
+            padding: 20px;
+            border-radius: 2rem;
+            border: 1px solid var.$color-border;
+            background-color: var.$color-background-secondary;
+
+            .role {
+                display: flex;
+                justify-content: space-between;
+            }
+
+
+
+            h3 {
+                padding-bottom: 5px;
+                font-size: 1.5rem;
+                color: white;
+            }
+
+            p {
+                font-size: 1.2rem;
+                color: grey;
+            }
+
+
+        }
+
+        .time {
+            color: grey;
+            font-size: 1.2rem;
+        }
+
+        .honor {
+            ul {
+                color: grey;
+
+                p {
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                    padding-top: 20px;
+                    padding-bottom: 5px;
+                    color: white;
+                }
+
+                li {
+                    font-size: 1.2rem;
+                    line-height: 1.7;
+                    margin: 0px 20px;
+                }
+
+            }
+        }
+    }
+
+    .edu {
+        &__title {
+            background: linear-gradient(to right, #852BF5 0%, #cf13bf 10%, #d911a9 15%, #ef377f 20%);
+            @include mixins.gradienttext;
+            font-size: 2.5rem;
+            padding-bottom: 10px;
+        }
+
+        &__details {
+            padding: 20px;
+            border-radius: 2rem;
+            border: 1px solid var.$color-border;
+            background-color: var.$color-background-secondary;
+
+            .deg {
+                padding-bottom: 5px;
+                font-size: 1.5rem;
+                color: white;
+            }
+
+            p {
+                padding-bottom: 10px;
+                font-size: 1.2rem;
+                color: grey;
+            }
+
+            ul {
+                color: grey;
+                font-size: 1.2rem;
+
+                p {
+                    padding-top: 20px;
+                    padding-bottom: 5px;
+                    font-size: 1.2rem;
+                    color: white;
+                }
+
+                li {
+                    line-height: 1.7;
+                    margin: 0px 20px;
+                }
+
+            }
+        }
+    }
+}

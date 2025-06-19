@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import '../styles/header.scss'
 function Header() {
+    const [dropmenu, setDropmenu] = useState(false);
     return (
         <section className="header">
             <section className="logo">
@@ -9,15 +11,18 @@ function Header() {
                     </span>
                 </a>
             </section>
+            {/*  {
+                dropmenu && <section className='sandwitch'>
+
+                </section>
+            } */}
             <section className="navbar">
                 <a href="#home"><p>Home</p></a>
-                <a href="#home"><p>About</p></a>
-                <a href="#home"><p>Skills</p></a>
-                <a href="#home"><p>Projects</p></a>
-                <a href="#home"><p>Achievements</p></a>
-            </section>
-            <section className="navlinks">
-                <button><a href="#contact">Contact</a></button>
+                <a href="#about"><p>About</p></a>
+                <a href="#skills"><p>Skills</p></a>
+                <a href="#pro"><p>Projects</p></a>
+                <a href="#achiev"><p>Achievements</p></a>
+                <a href="#contact"><p>Contact</p></a>
             </section>
         </section>
     );

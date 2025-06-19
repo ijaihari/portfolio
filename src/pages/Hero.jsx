@@ -1,22 +1,25 @@
+import { projects } from '../data/projects';
 import '../styles/hero.scss';
 
 function Hero() {
+    const latestProject = projects[0].preview;
     return (
         <div className="hero-section">
             <div className="hero-wrapper">
                 <section className='update-tab'>
                     <section className='btn-wrapper'>
-                        <button className="gradient-button">
-                            Checkout my latest project &nbsp;
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </button>
-
+                        <a href={latestProject} target='_blank'>
+                            <button className="gradient-button">
+                                Checkout my latest project &nbsp;
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </a>
                     </section>
                 </section>
                 <section className="greetings">
                     <h3>'Hello World'</h3>
                     <h1>I'm JAI HARI NATARAJ</h1>
-                    <h2>A Front-End Engineer</h2>
+                    <h2>A Front-End Developer</h2>
                 </section>
                 <section className="about">
                     <p>I engineer responsive, accessible web applications that ensure <br /> seamless user experiences and  handle dynamic data flows efficiently</p>

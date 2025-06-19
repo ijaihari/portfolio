@@ -1,7 +1,7 @@
 @use '../styles/variables' as var;
 @use '../styles/mixins';
 
-
+// Conic Gradient Animation Support
 @supports (background: conic-gradient(from var(--angle))) {
     @property --angle {
         syntax: "<angle>";
@@ -9,125 +9,181 @@
         initial-value: 0deg;
     }
 
-    .hero-section {
-        min-height: 100vh;
-        padding: 100px 0px;
-        background-color: var.$color-background-primary;
-
-        .hero-wrapper {
-            margin: 0 auto;
-            max-width: 1200px;
-            width: 90%;
-            @include mixins.flex-center;
-            flex-direction: column;
-
-            .update-tab {
-                margin-top: 10px;
-
-                .btn-wrapper {
-                    padding: 2px;
-                    border-radius: 1rem;
-                    background-image: conic-gradient(from var(--angle), white, grey, white);
-                    animation: rotate-gradient .5s linear infinite;
-                }
-
-                @keyframes rotate-gradient {
-                    0% {
-                        --angle: 0deg;
-                    }
-
-                    100% {
-                        --angle: 360deg;
-                    }
-                }
-
-                .gradient-button {
-                    color: white;
-                    background-color: var.$color-background-secondary;
-                    font-style: italic;
-                    font-size: .9rem;
-                    font-weight: 500;
-                    padding: 5px 15px;
-                    border-radius: 15px;
-                    border: none;
-                }
-            }
+    @keyframes rotate-gradient {
+        0% {
+            --angle: 0deg;
         }
 
-        .greetings {
-            margin-top: 50px;
-            @include mixins.flex-center;
-            flex-direction: column;
-            gap: 10px;
-
-            h3 {
-                @include mixins.textoutline;
-                font-size: 3.0rem;
-                font-weight: bold;
-            }
-
-            h1 {
-                font-size: 4.5rem;
-                font-weight: bold;
-                background: linear-gradient(to right, #852BF5 0%, #cf13bf 44%, #d911a9 64%, #ef377f 100%);
-                @include mixins.gradienttext;
-            }
-
-            h2 {
-                color: whitesmoke;
-                font-size: 3rem;
-                font-weight: 500;
-            }
-        }
-
-        .about {
-            color: #ffffff8f;
-            font-size: 1rem;
-            margin-top: 30px;
-            line-height: 1.5;
-            text-align: center;
-        }
-
-        .hero-links {
-            margin-top: 50px;
-            display: grid;
-            grid-template-columns: repeat(3, minmax(220px, 1fr));
-            grid-auto-flow: column;
-            gap: 15px;
-
-            button {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 15px;
-                background-color: var.$color-background-secondary;
-                color: white;
-                font-size: 1.2rem;
-                font-weight: 500;
-                padding: 15px 35px;
-                border-radius: 1rem;
-                border: 1px solid var.$color-border;
-                transition: all 0.3s ease;
-
-                &:hover {
-                    /*  color: black;
-                    background-color: white;
-                    box-shadow: 0px 0px 8px grey; */
-                    background-color: var.$color-btn-background;
-                }
-            }
+        100% {
+            --angle: 360deg;
         }
     }
 }
 
-@media (min-width: 350px) {}
+.hero-section {
+    padding: 100px 0;
+    background-color: var.$color-background-primary;
+}
 
-@media (min-width: 460px) {}
+.hero-wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+    @include mixins.flex-center;
+    flex-direction: column;
+}
 
-@media (min-width: 768px) {
-    .greetings{
-        h1{
+.update-tab {
+    margin-top: 10px;
+
+    .btn-wrapper {
+        padding: 2px;
+        border-radius: 1rem;
+        background-image: conic-gradient(from var(--angle), white, grey, white);
+        animation: rotate-gradient 0.5s linear infinite;
+    }
+
+    .gradient-button {
+        color: white;
+        background-color: var.$color-background-secondary;
+        font-style: italic;
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 5px 15px;
+        border-radius: 15px;
+        border: none;
+
+        @media(min-width:350px) and (max-width:426px) {
+            font-size: .7rem;
+        }
+    }
+}
+
+
+
+.greetings {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    h3 {
+        @include mixins.textoutline;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+        font-weight: bold;
+        background: linear-gradient(to right, #852BF5 0%, #cf13bf 44%, #d911a9 64%, #ef377f 100%);
+        @include mixins.gradienttext;
+    }
+
+    h2 {
+        font-size: 3rem;
+        color: whitesmoke;
+        font-weight: 500;
+    }
+
+
+    @media(min-width: 425px) {
+
+        h3 {
             font-size: 2rem;
         }
+
+        h1 {
+            font-size: 2.1rem;
+        }
+
+        h2 {
+
+            font-size: 2rem;
+        }
+
+    }
+
+    @media(min-width: 768px) and (max-width: 1024px) {
+        h3 {
+            font-size: 2.5rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        h2 {
+
+            font-size: 2.5rem;
+        }
+    }
+     @media(min-width: 1025px) {
+        h3 {
+            font-size: 3rem;
+        }
+
+        h1 {
+            font-size: 4.5rem;
+        }
+
+        h2 {
+
+            font-size: 3rem;
+        }
+    }
+}
+
+.about {
+    color: #ffffff8f;
+    font-size: 1rem;
+    margin-top: 30px;
+    line-height: 1.5;
+    text-align: center;
+
+    @media(min-width:350px) and (max-width:767px) {
+        font-size: .7rem;
+    }
+}
+
+.hero-links {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    grid-auto-flow: column;
+    gap: 15px;
+
+    @media(min-width:350px) and (max-width:767px) {
+        grid-template-columns: 280px;
+        grid-auto-flow: row;
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        background-color: var.$color-background-secondary;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 15px 35px;
+        border-radius: 1rem;
+        border: 1px solid var.$color-border;
+        transition: all 0.3s ease;
+
+        @media(min-width:350px) and (max-width:767px) {
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 12px 15px;
+        }
+
+        &:hover {
+            background-color: var.$color-btn-background;
+        }
+
+
     }
 }

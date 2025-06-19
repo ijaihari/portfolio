@@ -15,7 +15,7 @@
     }
 
     @media (min-width: 768px) {
-                grid-template-columns: repeat(2, minmax(300px, 380px));
+        grid-template-columns: repeat(2, minmax(300px, 380px));
     }
 
     @media (min-width: 1024px) {
@@ -45,7 +45,8 @@
         cursor: pointer;
 
         .pro-title {
-            text-decoration: underline;
+            background: linear-gradient(to right, #852BF5 0%, #cf13bf 15%, #d911a9 40%, #ef377f 55%);
+            @include mixins.gradienttext;
         }
     }
 
@@ -53,7 +54,6 @@
         width: 100%;
         height: 230px;
         border-radius: 25px;
-
     }
 
     .video-preview {
@@ -100,8 +100,7 @@
     }
 
     .pro-title {
-
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         margin-top: 10px;
         padding: 0px 5px;
     }
