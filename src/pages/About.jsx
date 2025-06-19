@@ -25,7 +25,7 @@ function About() {
                     </section>
                 </section>
                 <section className='experience'>
-                    {/* <section className='work'>
+                    <section className='work'>
                         <h3 className='work__title'>Experience</h3>
                         <div className='work__job-wrapper'>
                             <div className='role'>
@@ -43,11 +43,11 @@ function About() {
                             </div>
                         </div>
                        
-                    </section> */}
+                    </section>
                     <section className='edu'>
                         <h3 className='edu__title'>Education</h3>
                         <div className='edu__details'>
-                            <h3 className='deg'>Bachelor of Engineering EEE | 2024</h3>
+                            <h3 className='deg'>Bachelor of Engineering EEE (2024) | CGPA<span className='highlight'> 8.82 (FWD)</span></h3>
                             <p>Anna University, AAA college of Engineering & Tech.</p>
                             <ul>
                                 <p className='acti'>Activites</p>

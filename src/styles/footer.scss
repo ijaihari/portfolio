@@ -22,3 +22,11 @@
         text-decoration: underline;
     }
 }
+
+.mobile-break{
+    display: block;
+    @media(min-width: 490px){
+        display: none;
+    }
+
+}

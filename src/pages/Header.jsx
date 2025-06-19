@@ -1,7 +1,8 @@
 import { useState } from 'react';
+import { CgMenuHotdog } from "react-icons/cg";
 import '../styles/header.scss'
 function Header() {
-    const [dropmenu, setDropmenu] = useState(false);
+    const [dropmenu, setDropmenu] = useState(true);
     return (
         <section className="header">
             <section className="logo">
@@ -11,11 +12,6 @@ function Header() {
                     </span>
                 </a>
             </section>
-            {/*  {
-                dropmenu && <section className='sandwitch'>
-
-                </section>
-            } */}
             <section className="navbar">
                 <a href="#home"><p>Home</p></a>
                 <a href="#about"><p>About</p></a>
@@ -24,6 +20,9 @@ function Header() {
                 <a href="#achiev"><p>Achievements</p></a>
                 <a href="#contact"><p>Contact</p></a>
             </section>
+            <button className='sandmenu' onClick={() => setDropmenu(!dropmenu)}><CgMenuHotdog /></button>
+
+
         </section>
     );
 }

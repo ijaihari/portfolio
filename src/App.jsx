@@ -1,4 +1,5 @@
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
 import Header from "./pages/Header";
 import Hero from "./pages/Hero";
@@ -10,9 +11,10 @@ function App() {
     <div className="app-container">
       <Header />
       <Hero />
-      <About/>
+     {/*  <About /> */}
       <Skills />
       <Projects />
+     {/*  <Contact /> */}
       <Footer />
     </div>
   );
