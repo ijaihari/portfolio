@@ -18,14 +18,15 @@ function Projects() {
                 {projects.map((project, index) => (
 
                     <section className="pro-container" key={index}>
-                        <button
+                       {
+                        project.video &&  <button
                             className="video-preview"
                             onClick={() => handleClick(project.video)}
-                            disabled
                             title={project.video ? "Watch video preview" : "No video available"}
                         >
                             <FaVideo />
                         </button>
+                       }
 
                         <a href={project.preview} target='_blank'>  <section className='thumbnail'><img className="pro-thumbnail" src={project.thumbmail} alt={project.proName} /></section></a>
 

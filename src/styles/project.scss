@@ -68,17 +68,17 @@
 
     .video-preview {
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 18px;
+        right: 18px;
         font-size: 1rem;
         display: flex;
         place-content: center;
         padding: 8px;
         border-radius: 20px;
-        border: 1px solid #8080801d;
+        border: 1px solid #80808000;
         backdrop-filter: blur(30px);
         color: white;
-        background-color: #1e1e2c86;
+        background-color: #1e1e2c58;
         z-index: 1;
 
         &:hover {
@@ -116,12 +116,16 @@
     }
 
     .pro-about {
+        height: 200px;
         margin-top: 10px;
         padding: 0px 5px;
         margin-bottom: -5px;
         color: #ffffff8f;
         text-align: justify;
         line-height: 1.5;
+        @media(max-width: 756px){
+            height: fit-content;
+        }
     }
 
     .pro-links {

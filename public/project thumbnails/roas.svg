@@ -21,10 +21,9 @@
 <pattern id="pattern0_61_2" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_61_2" transform="matrix(0.000244141 0 0 0.000409065 0 -0.000491528)"/>
 </pattern>
-<linearGradient id="paint0_linear_61_2" x1="-6.88274e-06" y1="3.28171" x2="428.939" y2="279.432" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_61_2" x1="211.5" y1="-3.30553e-06" x2="194.338" y2="244.691" gradientUnits="userSpaceOnUse">
 <stop stop-color="#5656FF"/>
-<stop offset="0.5" stop-color="#A727E7"/>
-<stop offset="1" stop-color="#FF86D9"/>
+<stop offset="0.740385" stop-color="#A727E7"/>
 </linearGradient>
 <clipPath id="clip0_61_2">
 <rect width="450" height="250" fill="white"/>
