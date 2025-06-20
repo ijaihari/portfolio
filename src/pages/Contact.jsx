@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub, FaXTwitter, FaInstagram } from "react-icons/fa6";
 
 function Contact() { 
     return (
-        <div className="section">
+        <div className="section" id='contact'>
             <h1 className="title">Let's Connect !</h1>
             <section className="contact-wrapper">
                 <section className='social-links'>
