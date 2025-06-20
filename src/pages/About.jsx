@@ -1,7 +1,7 @@
 import '../styles/about.scss'
 function About() {
     return (
-        <div className="section" id='about'>
+        <div className="section scroll-offset" id='about'>
             <h1 className="title">About Me</h1>
             <section className='about-wrapper'>
                 <section className='me'>

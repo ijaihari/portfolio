@@ -3,7 +3,7 @@ import { skills } from "../data/skills";
 
 function Skills() {
     return (
-        <div className="section" id='skills'>
+        <div className="section scroll-offset" id='skills'>
             <h1 className="title">My Tech Stack</h1>
             <section className="skill-container">
                 {skills.length > 0 ? (

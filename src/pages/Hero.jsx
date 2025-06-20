@@ -5,7 +5,7 @@ function Hero() {
 
     const latestProject = projects[0].preview;
     return (
-        <div className="hero-section" id='hero'>
+        <div className="hero-section scroll-offset" id='hero'>
             <div className="hero-wrapper">
                 <section className='update-tab'>
                     <section className='btn-wrapper'>

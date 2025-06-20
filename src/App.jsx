@@ -1,4 +1,5 @@
 import About from "./pages/About";
+import Certificates from "./pages/Certificates";
 import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
 import Header from "./pages/Header";
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Certificates />
       <Contact />
       <Footer />
     </div>

@@ -42,9 +42,11 @@
     background-color: #0F0F13;
     border: 1px solid #8080801d;
     position: relative;
+    transition: transform 0.3s ease;
 
     &:hover {
-        cursor: pointer;
+        transform: scale(1.03);
+        box-shadow: inset 0px 5px 10px #80808033;
 
         .pro-title {
             background: linear-gradient(to right, #852BF5 0%, #cf13bf 15%, #d911a9 40%, #ef377f 55%);
