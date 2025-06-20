@@ -11,7 +11,7 @@ function App() {
     <div className="app-container">
       <Header />
       <Hero />
-     {/*  <About /> */}
+      <About />
       <Skills />
       <Projects />
       <Contact />

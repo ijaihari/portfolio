@@ -2,6 +2,7 @@ import { projects } from '../data/projects';
 import '../styles/hero.scss';
 
 function Hero() {
+
     const latestProject = projects[0].preview;
     return (
         <div className="hero-section">
@@ -25,9 +26,9 @@ function Hero() {
                     <p>I engineer responsive, accessible web applications that ensure <br className='mobile-break' />seamless user experiences and  handle dynamic data flows efficiently</p>
                 </section>
                 <section className="hero-links">
-                    <button><i class="fa-solid fa-file"></i> Resume</button>
-                    <button><i class="fa-brands fa-linkedin"></i> LinkedIn</button>
-                    <button><i class="fa-brands fa-github"></i> GitHub</button>
+                    <a href="/pdfs/JaiHari-FrontEnd-Resume.pdf" target='_blank'><button><i class="fa-solid fa-file"></i> Resume</button></a>
+                    <a href="https://www.linkedin.com/in/ijaihari/" target='_blank'><button><i class="fa-brands fa-linkedin"></i> LinkedIn</button></a>
+                    <a href="https://github.com/ijaihari" target='_blank'><button><i class="fa-brands fa-github"></i> GitHub</button></a>
                 </section>
             </div>
         </div>

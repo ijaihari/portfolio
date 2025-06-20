@@ -11,7 +11,7 @@ function About() {
                             {/* <p>FED @ CompanyName</p>
                             <p>July 10 - Present</p> */}
                             <p>Status: Open to Work</p>
-                            <p>Availability : <span>Immediate</span></p>
+                            <p>Avail. : <span>Immediate</span></p>
                         </div>
                     </section>
                     <section className='myvalue'>

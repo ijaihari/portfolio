@@ -1,7 +1,7 @@
 import '../styles/contact.scss';
 import { FaLinkedin, FaGithub, FaXTwitter, FaInstagram } from "react-icons/fa6";
 
-function Contact() { 
+function Contact() {
     return (
         <div className="section" id='contact'>
             <h1 className="title">Let's Connect !</h1>
@@ -15,10 +15,10 @@ function Contact() {
                     <section className='social-wrapper'>
                         <h3>Social</h3>
                         <section className='social-links'>
-                            <a href=""><FaLinkedin /></a>
-                            <a href=""><FaGithub /></a>
-                            <a href=""><FaXTwitter /></a>
-                            <a href=""><FaInstagram /></a>
+                            <a href="https://www.linkedin.com/in/ijaihari/" target='_blank'><FaLinkedin /></a>
+                            <a href="https://github.com/ijaihari" target='_blank'><FaGithub /></a>
+                            <a href="https://x.com/ijaihari" target='_blank'><FaXTwitter /></a>
+                            <a href="https://www.instagram.com/ijaihari" target='_blank'><FaInstagram /></a>
                         </section>
                     </section>
                 </section>

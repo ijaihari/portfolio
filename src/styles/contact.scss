@@ -136,7 +136,8 @@
             padding: 10px 20px;
             font-size: 1rem;
             font-weight: 500;
-            background-color: var.$color-btn-background;
+            background-color:var.$color-background-secondary;
+            
             color: white;
             border: 1px solid var.$color-border;
             border-radius: 10px;
@@ -148,8 +149,7 @@
             }
 
             &:hover {
-                color: black;
-                background-color: white;
+               background-color:var.$color-btn-background;
             }
         }
     }

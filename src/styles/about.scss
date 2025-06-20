@@ -8,14 +8,31 @@
 }
 
 .about-wrapper {
-    margin: 50px 0px;
+    margin: 50px auto;
     display: flex;
     justify-content: center;
     gap: 100px;
+    max-width: 1200px;
+    width: 95%;
+
+    @media (min-width: 768px) and (max-width:1435px) {
+        gap: 20px;
+    }
+
+    @media (min-width: 350px) and (max-width:1024px) {
+        flex-direction: column;
+        width: fit-content;
+    }
+
 }
 
 .me {
-    width: 400px;
+    max-width: 400px;
+
+    @media (min-width: 350px) and (max-width:768px) {
+
+        width: 90%;
+    }
 
     .status {
         padding: 10px;

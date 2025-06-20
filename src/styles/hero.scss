@@ -90,6 +90,7 @@
         color: whitesmoke;
     }
 
+    // Mobile: up to 480px
     @media (max-width: 480px) {
         margin-top: 30px;
 
@@ -108,39 +109,26 @@
         }
     }
 
-    @media (min-width: 480px) {
+    // Tablet: 481px to 1024px
+    @media (min-width: 481px) and (max-width: 1024px) {
         margin-top: 30px;
 
-        h3 {
-            font-size: 2rem;
-        }
-
-        h1 {
-            font-size: 3.3rem;
-            text-align: center;
-        }
-
-        h2 {
-            font-size: 1.8rem;
-            text-align: center;
-        }
-    }
-
-    // Tablets
-    @media (min-width: 768px) and (max-width: 1024px) {
         h3 {
             font-size: 2.5rem;
         }
 
         h1 {
             font-size: 3.5rem;
+            text-align: center;
         }
 
         h2 {
             font-size: 2.5rem;
+            text-align: center;
         }
     }
 }
+
 
 
 .about {
@@ -169,6 +157,7 @@
     }
 
     button {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -191,8 +180,6 @@
         &:hover {
             background-color: var.$color-btn-background;
         }
-
-
     }
 }
 

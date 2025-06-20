@@ -22,6 +22,7 @@
     }
 
     @media (min-width: 1024px) {
+        gap: 50px;
         max-width: 1000px;
         grid-template-columns: repeat(2, minmax(340px, 400px));
 
@@ -123,7 +124,8 @@
         color: #ffffff8f;
         text-align: justify;
         line-height: 1.5;
-        @media(max-width: 756px){
+
+        @media(max-width: 756px) {
             height: fit-content;
         }
     }
