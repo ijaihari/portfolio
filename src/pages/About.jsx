@@ -1,12 +1,12 @@
 import '../styles/about.scss'
 function About() {
     return (
-        <div className="section">
+        <div className="section" id='about'>
             <h1 className="title">About Me</h1>
             <section className='about-wrapper'>
                 <section className='me'>
                     <section className='status'>
-                        <img className='status__image' src="public\about\profile.jpg" alt="" />
+                        <img className='status__image' src="/about/profile.jpg" alt="" />
                         <div className='status__content'>
                             {/* <p>FED @ CompanyName</p>
                             <p>July 10 - Present</p> */}
@@ -25,13 +25,13 @@ function About() {
                     </section>
                 </section>
                 <section className='experience'>
-                    <section className='work'>
+                    {/* <section className='work'>
                         <h3 className='work__title'>Experience</h3>
                         <div className='work__job-wrapper'>
                             <div className='role'>
                                 <span>
                                     <h3>Front-End Developer </h3>
-                                    <p>Company Name <span className='time'> [ 23 July - Present ]</span></p>
+                                    <p>CompanyName <span className='time'>[23 Jul - Now]</span></p>
                                 </span>
 
                             </div>
@@ -43,7 +43,7 @@ function About() {
                             </div>
                         </div>
 
-                    </section>
+                    </section> */}
                     <section className='edu'>
                         <h3 className='edu__title'>Education</h3>
                         <div className='edu__details'>

@@ -9,7 +9,7 @@ function Contact() {
                 <section className='social-links'>
                     <section className='reachout-wrapper'>
                         <h3>Reach Out</h3>
-                        <p>Email: iamjaihari@gmail.com</p>
+                        <p>Email: sjaiharinataraj@gmail.com</p>
                         <p>Phone: 9843273540</p>
                     </section>
                     <section className='social-wrapper'>

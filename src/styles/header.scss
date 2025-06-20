@@ -14,7 +14,7 @@
     gap: 10px;
     padding: 7px 9px 7px 20px;
     border-radius: 50px;
-    background-color: #0f0f137b;
+    background-color: #0f0f1347;
     backdrop-filter: blur(10px);
     font-size: 1.2rem;
     border: 1px solid var.$color-border;
@@ -22,12 +22,8 @@
 
     @media(min-width:350px) and (max-width:768px) {
         justify-content: space-between;
-        width: 90%;
-        padding: 7px 20px;
-    }
-
-    @media (max-width: 425px) {
         width: 95%;
+        padding: 7px 20px;
     }
 
     .logo {
@@ -75,7 +71,6 @@
         }
 
     }
-
 
 }
 
