@@ -3,6 +3,7 @@
 
 .contact-wrapper {
     max-width: 1200px;
+    width: 95%;
     height: auto;
     margin: 50px auto;
     border-radius: 2rem;
@@ -11,6 +12,17 @@
     border: 1px solid var.$color-border;
     display: flex;
     gap: 50px;
+
+    @media(max-width:768px) {
+        width: 92%;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    @media(min-width:768px) and (max-width:1024px) {
+        padding: 30px;
+    }
+
 }
 
 .social-links {
@@ -27,6 +39,11 @@
             font-size: 2.5rem;
             background: linear-gradient(to right, #852BF5 0%, #cf13bf 10%, #d911a9 15%, #ef377f 25%);
             @include mixins.gradienttext;
+
+            @media(min-width:320px) and (max-width:768px) {
+                font-size: 1.8rem;
+            }
+
         }
 
         p {
@@ -41,6 +58,10 @@
             padding-bottom: 10px;
             background: linear-gradient(to right, #852BF5 0%, #cf13bf 10%, #d911a9 15%, #ef377f 20%);
             @include mixins.gradienttext;
+
+            @media(min-width:320px) and (max-width:768px) {
+                font-size: 1.8rem;
+            }
         }
 
         .social-links {
@@ -68,6 +89,9 @@
         color: white;
         font-size: 2.5rem;
         padding-bottom: 10px;
+         @media(min-width:320px) and (max-width:768px) {
+                font-size: 1.8rem;
+            }
     }
 
     form {
@@ -113,6 +137,9 @@
             border-radius: 10px;
             cursor: pointer;
             transition: all 0.5s ease;
+             @media(min-width:320px) and (max-width:768px) {
+              width: 100%;
+            }
 
             &:hover {
                 color: black;

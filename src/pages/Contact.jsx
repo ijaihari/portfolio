@@ -1,7 +1,7 @@
 import '../styles/contact.scss';
 import { FaLinkedin, FaGithub, FaXTwitter, FaInstagram } from "react-icons/fa6";
 
-function Contact() {
+function Contact() { 
     return (
         <div className="section">
             <h1 className="title">Let's Connect !</h1>
