@@ -21,7 +21,7 @@ function Projects() {
                         <button
                             className="video-preview"
                             onClick={() => handleClick(project.video)}
-                            disabled={!project.video}
+                            disabled
                             title={project.video ? "Watch video preview" : "No video available"}
                         >
                             <FaVideo />
