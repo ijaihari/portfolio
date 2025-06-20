@@ -1,7 +1,7 @@
 import '../styles/about.scss'
 function About() {
     return (
-        <div className="about-container">
+        <div className="section">
             <h1 className="title">About Me</h1>
             <section className='about-wrapper'>
                 <section className='me'>
@@ -31,9 +31,9 @@ function About() {
                             <div className='role'>
                                 <span>
                                     <h3>Front-End Developer </h3>
-                                    <p>Company Name </p>
+                                    <p>Company Name <span className='time'> [ 23 July - Present ]</span></p>
                                 </span>
-                                <span className='time'> (23 July - Present)</span>
+
                             </div>
                             <div className='honor'>
                                 <ul>
@@ -42,7 +42,7 @@ function About() {
                                 </ul>
                             </div>
                         </div>
-                       
+
                     </section>
                     <section className='edu'>
                         <h3 className='edu__title'>Education</h3>
