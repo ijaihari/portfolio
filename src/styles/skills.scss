@@ -1,17 +1,6 @@
 @use '../styles/variables' as var;
 @use '../styles/mixins';
 
-.section {
-    background-color: var.$color-background-primary;
-    padding: 30px 0px;
-}
-
-.title {
-    padding-bottom: 2rem;
-    color: white;
-    text-align: center;
-    font-size: 3rem;
-}
 
 .skill-container {
     display: grid;
@@ -20,14 +9,16 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
-    margin: 50px auto;
-    width: 85%;
+    margin: 30px auto;
+    width: 90%;
 
     @media (min-width: 1024px) {
-        max-width: 850px;
+        margin: 50px auto;
+        max-width: 800px;
     }
 
     @media (min-width: 1440px) {
+        margin: 50px auto;
         max-width: 1200px;
     }
 

@@ -16,41 +16,41 @@ function Projects() {
             <h1 className="title">Projects</h1>
             <section className="pro-section">
                 {projects.map((project, index) => (
-                    <a href={project.preview} target='_blank'>
-                        <section className="pro-container" key={index}>
-                            <button
-                                className="video-preview"
-                                onClick={() => handleClick(project.video)}
-                                disabled={!project.video}
-                                title={project.video ? "Watch video preview" : "No video available"}
-                            >
-                                <FaVideo />
-                            </button>
 
-                            <img className="pro-thumbnail" src={project.thumbmail} alt={project.proName} />
+                    <section className="pro-container" key={index}>
+                        <button
+                            className="video-preview"
+                            onClick={() => handleClick(project.video)}
+                            disabled={!project.video}
+                            title={project.video ? "Watch video preview" : "No video available"}
+                        >
+                            <FaVideo />
+                        </button>
 
-                            <section className="pro-tech-stack">
-                                {project.techStack.map((tech, i) => (
-                                    <span className="pro-tech-container" key={i}>{tech}</span>
-                                ))}
-                            </section>
-                            <section className="pro-title">
-                                <h4>{project.proName}</h4>
-                            </section>
-                            <section className="pro-about">
-                                <p>{project.about}</p>
-                            </section>
+                        <a href={project.preview} target='_blank'>  <section className='thumbnail'><img className="pro-thumbnail" src={project.thumbmail} alt={project.proName} /></section></a>
 
-                            <section className="pro-links">
-                                <button className="pro-link-btn" onClick={() => handleClick(project.preview)}>
-                                    <SlGlobe /> Live preview
-                                </button>
-                                <button className="pro-link-btn" onClick={() => handleClick(project.github)}>
-                                    <SiGithub />
-                                </button>
-                            </section>
+                        <section className="pro-tech-stack">
+                            {project.techStack.map((tech, i) => (
+                                <span className="pro-tech-container" key={i}>{tech}</span>
+                            ))}
                         </section>
-                    </a>
+                        <section className="pro-title">
+                            <h4>{project.proName}</h4>
+                        </section>
+                        <section className="pro-about">
+                            <p>{project.about}</p>
+                        </section>
+
+                        <section className="pro-links">
+                            <button className="pro-link-btn" onClick={() => handleClick(project.preview)}>
+                                <SlGlobe /> Live preview
+                            </button>
+                            <button className="pro-link-btn" onClick={() => handleClick(project.github)}>
+                                <SiGithub />
+                            </button>
+                        </section>
+                    </section>
+
                 ))}
             </section>
         </div>

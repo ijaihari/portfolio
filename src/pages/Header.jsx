@@ -8,7 +8,7 @@ function Header() {
             <section className="logo">
                 <a href="">
                     <span>
-                        <img src="/J.svg" alt="" />
+                        <img src="/logos/J.svg" alt="" />
                     </span>
                 </a>
             </section>

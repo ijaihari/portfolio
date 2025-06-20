@@ -23,6 +23,10 @@
 .hero-section {
     padding: 100px 0;
     background-color: var.$color-background-primary;
+
+    @media(min-width:350px) and (max-width:426px) {
+       padding: 80px 0px 50px;
+    }
 }
 
 .hero-wrapper {
@@ -88,22 +92,21 @@
         font-weight: 500;
     }
 
-
-    @media(min-width: 425px) {
-
+    @media(min-width: 350px) {
+        margin-top: 30px;
         h3 {
             font-size: 2rem;
         }
 
         h1 {
-            font-size: 2.1rem;
+            text-align: center;
+            font-size: 3.3rem;
         }
 
         h2 {
-
-            font-size: 2rem;
+            text-align: justify;
+            font-size: 1.8rem;
         }
-
     }
 
     @media(min-width: 768px) and (max-width: 1024px) {
@@ -120,20 +123,7 @@
             font-size: 2.5rem;
         }
     }
-     @media(min-width: 1025px) {
-        h3 {
-            font-size: 3rem;
-        }
 
-        h1 {
-            font-size: 4.5rem;
-        }
-
-        h2 {
-
-            font-size: 3rem;
-        }
-    }
 }
 
 .about {
@@ -143,8 +133,9 @@
     line-height: 1.5;
     text-align: center;
 
-    @media(min-width:350px) and (max-width:767px) {
-        font-size: .7rem;
+    @media(min-width:350px) and (max-width:570px) {
+        text-align: justify;
+        font-size: .8rem;
     }
 }
 
@@ -175,9 +166,9 @@
         transition: all 0.3s ease;
 
         @media(min-width:350px) and (max-width:767px) {
-            font-size: 1rem;
-            font-weight: 500;
-            padding: 12px 15px;
+            font-size: 1.2rem;
+            font-weight: 400;
+            padding: 15px;
         }
 
         &:hover {
@@ -185,5 +176,13 @@
         }
 
 
+    }
+}
+
+.mobile-break {
+    display: none;
+
+    @media(min-width: 570px) {
+        display: block;
     }
 }

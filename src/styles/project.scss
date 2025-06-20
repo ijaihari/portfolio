@@ -1,6 +1,7 @@
 @use '../styles/variables' as var;
 @use '../styles/mixins';
 
+//400px x 230px
 
 .pro-section {
     display: grid;
@@ -12,10 +13,12 @@
 
     @media (min-width: 350px) {
         grid-template-columns: repeat(1, minmax(300px, 380px));
+        margin: 30px auto;
     }
 
     @media (min-width: 768px) {
         grid-template-columns: repeat(2, minmax(300px, 380px));
+        margin: 30px auto;
     }
 
     @media (min-width: 1024px) {
@@ -28,7 +31,6 @@
         max-width: 1200px;
         grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     }
-
 
 }
 
@@ -48,16 +50,21 @@
             background: linear-gradient(to right, #852BF5 0%, #cf13bf 15%, #d911a9 40%, #ef377f 55%);
             @include mixins.gradienttext;
         }
-
-        .pro-about {
-            color: white;
-        }
     }
 
-    img {
+    .thumbnail {
         width: 100%;
-        height: 230px;
-        border-radius: 25px;
+        height: 220px;
+        border-radius: 1.5rem;
+        background-color: red;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
     .video-preview {
