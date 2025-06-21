@@ -15,7 +15,6 @@ function App() {
     <>
       <ScrollToTop />
       <Routes>
-        {/* Home Route */}
         <Route path="/" element={
           <div className="app-container">
             <Header />
@@ -28,8 +27,6 @@ function App() {
             <Footer />
           </div>
         } />
-
-        {/* Thank You Route */}
         <Route path="/thankyou" element={<ThankYou />} />
       </Routes>
     </>

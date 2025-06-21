@@ -25,7 +25,6 @@ function Contact() {
                     </section>
                 </section>
 
-                {/* Right Side - Contact Form */}
                 <section className="message">
                     <h3>Message</h3>
                     <form

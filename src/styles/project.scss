@@ -1,7 +1,7 @@
 @use '../styles/variables' as var;
 @use '../styles/mixins';
 
-//400px x 230px
+//400px x 230px Project Thumbnail Size
 
 .pro-section {
     display: grid;
@@ -48,13 +48,11 @@
         cursor: pointer;
         transform: scale(1.03);
          box-shadow: inset 0px 5px 15px #80808033;
-
         /* box-shadow:
             inset 2px 0 15px rgba(115, 0, 255, 0.4), //L
             inset -2px 0 15px rgba(255, 0, 195, 0.4), //R
             inset 0 2px 15px rgba(76, 123, 231, 0.4), //T
             inset 0 -2px 15px rgba(255, 0, 98, 0.4); //B */
-
         .pro-title {
             background: linear-gradient(to right, #852BF5 0%, #cf13bf 15%, #d911a9 40%, #ef377f 55%);
             @include mixins.gradienttext;

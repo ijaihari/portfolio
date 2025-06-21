@@ -1,7 +1,6 @@
 @use '../styles/variables' as var;
 @use '../styles/mixins';
 
-// Conic Gradient Animation Support
 @supports (background: conic-gradient(from var(--angle))) {
     @property --angle {
         syntax: "<angle>";
@@ -90,7 +89,6 @@
         color: whitesmoke;
     }
 
-    // Mobile: up to 480px
     @media (max-width: 480px) {
         margin-top: 30px;
 
@@ -109,7 +107,6 @@
         }
     }
 
-    // Tablet: 481px to 1024px
     @media (min-width: 481px) and (max-width: 1024px) {
         margin-top: 30px;
 
@@ -128,8 +125,6 @@
         }
     }
 }
-
-
 
 .about {
     color: #ffffff8f;
@@ -183,11 +178,3 @@
         }
     }
 }
-
-/* .mobile-break {
-    display: none;
-
-    @media(min-width: 570px) {
-        display: block;
-    }
-} */

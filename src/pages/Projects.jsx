@@ -8,15 +8,12 @@ const handleClick = (url) => {
     if (url) window.open(url, '_blank');
 };
 
-
-
 function Projects() {
     return (
         <div className="section scroll-offset" id='projects'>
             <h1 className="title">Projects</h1>
             <section className="pro-section">
                 {projects.map((project, index) => (
-
                     <section className="pro-container" key={index}>
                         {
                             project.video && <button
@@ -27,7 +24,6 @@ function Projects() {
                                 <FaVideo />
                             </button>
                         }
-
                         <a href={project.preview} target='_blank'>  <section className='thumbnail'><img className="pro-thumbnail" src={project.thumbmail} alt={project.proName} /></section></a>
 
                         <section className="pro-tech-stack">
@@ -41,7 +37,6 @@ function Projects() {
                         <section className="pro-about">
                             <p>{project.about}</p>
                         </section>
-
                         <section className="pro-links">
                             <button className="pro-link-btn" onClick={() => handleClick(project.preview)}>
                                 <SlGlobe /> Live preview
@@ -51,7 +46,6 @@ function Projects() {
                             </button>
                         </section>
                     </section>
-
                 ))}
             </section>
         </div>
