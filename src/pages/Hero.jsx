@@ -1,5 +1,6 @@
 import { projects } from '../data/projects';
 import '../styles/hero.scss';
+import { FaFile, FaLinkedin, FaGithub } from "react-icons/fa6";
 
 function Hero() {
 
@@ -26,9 +27,9 @@ function Hero() {
                     <p>I develop code that looks good and works even better.</p>
                 </section>
                 <section className="hero-links">
-                    <a href="/pdfs/JaiHari-FrontEnd-Resume.pdf" target='_blank'><button><i class="fa-solid fa-file"></i> Resume</button></a>
-                    <a href="https://www.linkedin.com/in/ijaihari/" target='_blank'><button><i class="fa-brands fa-linkedin"></i> LinkedIn</button></a>
-                    <a href="https://github.com/ijaihari" target='_blank'><button><i class="fa-brands fa-github"></i> GitHub</button></a>
+                    <a href="/pdfs/JaiHari-FrontEnd-Resume.pdf" target='_blank'><button><FaFile /> Resume</button></a>
+                    <a href="https://www.linkedin.com/in/ijaihari/" target='_blank'><button><FaLinkedin /> LinkedIn</button></a>
+                    <a href="https://github.com/ijaihari" target='_blank'><button><FaGithub /> GitHub</button></a>
                 </section>
             </div>
         </div>
