@@ -2,14 +2,12 @@
 
 .dropdown-menu {
     position: absolute;
-    top: 70px;
-    right: 20px;
+    top: 60px;
+    right: 0px;
     width: 200px;
     padding: 15px;
     border-radius: 2rem;
-    background-color: rgba(15, 15, 19, 0.6); // semi-transparent
-    -webkit-backdrop-filter: blur(10px); // Safari support
-    backdrop-filter: blur(10px);
+    background-color: #0F0F13;
     border: 1px solid var.$color-border;
     z-index: 555;
     display: flex;
