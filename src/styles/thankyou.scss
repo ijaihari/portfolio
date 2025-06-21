@@ -1,0 +1,55 @@
+@use '../styles/variables' as var;
+@use '../styles/mixins';
+
+.thankyou-section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var.$color-background-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+
+  .thankyou-wrapper {
+    background-color: var.$color-background-secondary;
+    border: 1px solid var.$color-border;
+    padding: 60px;
+    border-radius: 2rem;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+
+    p {
+      font-size: 1.2rem;
+      color: white;
+      margin-bottom: 30px;
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+
+    .home-button {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: 600;
+      background-color: var.$color-btn-background;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      border: 1px solid var.$color-border;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
