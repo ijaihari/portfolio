@@ -9,10 +9,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0f0f1344;
+    background-color: #0f0f1388;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     color: white;
-    border: 1px solid var.$color-border;
+    border: 1px solid #ffffff1a;
     border-radius: 50%;
     cursor: pointer;
     z-index: 999;
@@ -26,6 +27,8 @@
 
     &:hover {
         transform: scale(1.1);
+        color: black;
+        background-color: white;
     }
 
     svg {
@@ -33,7 +36,7 @@
         height: 20px;
     }
 
-    @media (max-width: 768px) {
+    /*  @media (max-width: 768px) {
         width: 40px;
         height: 40px;
 
@@ -41,5 +44,5 @@
             width: 16px;
             height: 16px;
         }
-    }
+    } */
 }
