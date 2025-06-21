@@ -1,13 +1,11 @@
 @use '../styles/variables' as var;
 @use '../styles/mixins';
 
-
 .header {
     position: fixed;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,13 +13,14 @@
     padding: 7px 9px 7px 20px;
     border-radius: 50px;
     background-color: #0f0f1388;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     font-size: 1.2rem;
     border: 1px solid var.$color-border;
     z-index: 111;
+    width: auto;
 
-
-    @media(min-width:350px) and (max-width:768px) {
+    @media (min-width: 350px) and (max-width: 768px) {
         background-color: #ffffff0a;
         width: 95%;
         padding: 7px 20px;
@@ -37,7 +36,7 @@
         justify-content: center;
         gap: 10px;
 
-        @media(min-width:350px) and (max-width:768px) {
+        @media (min-width: 350px) and (max-width: 768px) {
             a {
                 display: none;
             }
@@ -48,7 +47,7 @@
             font-size: 1rem;
             font-weight: 500;
             border-radius: 20px;
-            padding: 10px 15px 10px;
+            padding: 10px 15px;
             border: 1px solid transparent;
             transition: all 0.5s ease;
 
@@ -59,31 +58,85 @@
             }
 
             &:last-child {
-                font-weight: 500;
                 background-color: white;
                 color: black;
 
                 &:hover {
-                    color: black;
                     box-shadow: 0px 0px 10px grey;
-                    background-color: white;
+                }
+            }
+        }
+    }
+
+    .sandmenu {
+        display: block;
+        @include mixins.flex-center;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 2rem;
+
+        @media (min-width: 769px) {
+            display: none;
+        }
+    }
+
+
+
+    .dropdown-menu {
+        width: 200px;
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        background-color: var.$color-background-secondary;
+        border: 1px solid var.$color-border;
+        border-radius: 2rem;
+        padding: 15px;
+        z-index: 555;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+
+        opacity: 0;
+        transform: translateY(-10px);
+        animation: dropdownFade 0.3s ease-out forwards;
+
+        a {
+            color: white;
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 20px;
+            padding: 10px 15px;
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: black;
+                background-color: white;
+            }
+
+            &:last-child {
+                background-color: white;
+                color: black;
+
+                &:hover {
+                    box-shadow: 0px 0px 10px grey;
                 }
             }
         }
 
+        @media (min-width: 769px) {
+            display: none;
+        }
     }
 
-}
-
-.sandmenu {
-    display: block;
-    @include mixins.flex-center;
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 2rem;
-
-    @media(min-width: 769px) {
-        display: none;
+    @keyframes dropdownFade {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
+
 }
