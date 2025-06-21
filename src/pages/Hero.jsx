@@ -23,7 +23,7 @@ function Hero() {
                     <h2>A Front-End Developer</h2>
                 </section>
                 <section className="about">
-                    <p>I engineer responsive, accessible web applications that ensure <br className='mobile-break' />seamless user experiences and  handle dynamic data flows efficiently</p>
+                    <p>I develop code that looks good and works even better.</p>
                 </section>
                 <section className="hero-links">
                     <a href="/pdfs/JaiHari-FrontEnd-Resume.pdf" target='_blank'><button><i class="fa-solid fa-file"></i> Resume</button></a>

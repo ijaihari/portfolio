@@ -42,6 +42,8 @@
     transition: transform 0.3s ease;
 
     &:hover {
+        cursor: pointer;
+
         .cert-title {
             background: linear-gradient(to right, #852BF5 0%, #cf13bf 15%, #d911a9 40%, #ef377f 55%);
             @include mixins.gradienttext;
