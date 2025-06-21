@@ -1,3 +1,4 @@
+import ScrollToTop from "./components/ScrollToTop";
 import About from "./pages/About";
 import Certificates from "./pages/Certificates";
 import Contact from "./pages/Contact";
@@ -18,6 +19,7 @@ function App() {
       <Certificates />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }

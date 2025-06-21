@@ -1,0 +1,44 @@
+@use '../styles/variables' as var;
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0f1344;
+    backdrop-filter: blur(10px);
+    color: white;
+    border: 1px solid var.$color-border;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+
+    @media (max-width:425px) {
+        border: 1px solid var.$color-border;
+        bottom: 10px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    @media (max-width: 768px) {
+        width: 40px;
+        height: 40px;
+
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
