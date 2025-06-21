@@ -4,7 +4,7 @@ import { FaFile, FaLinkedin, FaGithub } from "react-icons/fa6";
 
 function Hero() {
 
-    const latestProject = projects[0].preview;
+    const latestProject = projects[1].preview;
     return (
         <div className="hero-section scroll-offset" id='hero'>
             <div className="hero-wrapper">

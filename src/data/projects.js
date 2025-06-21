@@ -1,6 +1,6 @@
 export const projects = [
     {
-        proName: "ROAS Insight Suite",
+        proName: "ROAS Insight Suite ( Web )",
         video: "https://youtu.be/2T8EHB4MPZU?feature=shared",
         thumbmail: "/project-thumbnails/ROAS.svg",
         techStack: ["React", "Redux ToolKit", "Router", "SCSS"],
