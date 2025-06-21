@@ -31,6 +31,7 @@ a {
 }
 
 .title {
+  text-transform: uppercase;
   padding-bottom: 2rem;
   color: white;
   text-align: center;
@@ -40,13 +41,12 @@ a {
 @media(min-width:350px) and (max-width:430px) {
   .title {
     padding-bottom: .5rem;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
 
   .section {
     padding: 10px 0px;
   }
-
 }
 
 .scroll-offset {
