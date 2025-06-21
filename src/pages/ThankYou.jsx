@@ -6,7 +6,7 @@ function ThankYou() {
     <div className="thankyou-section scroll-offset">
       <section className="thankyou-wrapper">
         <h1 className="title">Thank You!</h1>
-        <p>Your message has been successfully sent. I will get back to you soon.</p>
+        <p>Your message has been successfully sent. <br />I will get back to you soon.</p>
         <Link to="/" className="home-button">Back to Home</Link>
       </section>
     </div>
