@@ -8,7 +8,7 @@ function Hero() {
 
     const greetings = [
         "'Hello World'",
-        "உலகத்திற்கு வணக்கம்",
+        "உலகிற்கு வணக்கம்",
         "' こんにちは世界 '",
         "' مرحبا بالعالم '",
         "' Hola Mundo '",
