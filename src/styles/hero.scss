@@ -96,6 +96,7 @@
         margin-bottom: 5px;
 
         @media (max-width: 769px) {
+            margin-bottom: 10px;
             @include mixins.removeTextOutline;
         }
     }
@@ -124,6 +125,7 @@
         h1 {
             font-size: 3.3rem;
             text-align: center;
+             margin-bottom: 10px;
         }
 
         h2 {
