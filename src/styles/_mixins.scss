@@ -14,3 +14,10 @@
     color: transparent;
     -webkit-text-stroke: 1px white;
 }
+@mixin removeTextOutline {
+  color: white;
+  text-shadow: none;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: white;
+}

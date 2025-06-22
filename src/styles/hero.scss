@@ -70,7 +70,7 @@
     justify-content: center;
     gap: 10px;
 
-    h3 {
+    /*  h3 {
         font-family: "Rubik", sans-serif;
         @include mixins.textoutline;
         font-size: 3rem;
@@ -81,7 +81,22 @@
         justify-content: center;
         text-align: center;
         margin-bottom: 5px;
+    } */
+
+    h3 {
+       font-family: Arial, Helvetica, sans-serif;
+        @include mixins.textoutline;
+        font-size: 3rem;
+        font-weight: bold;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 5px;
     }
+
+
 
     h1 {
         font-size: 4.5rem;
