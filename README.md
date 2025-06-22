@@ -1,12 +1,28 @@
-# React + Vite
+# Jai Hari Nataraj — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi, I am Jai Hari Nataraj, a passionate **Front-End Developer** skilled in building responsive and modern web applications. I specialize in **React.js**, **Tailwind CSS**, and creating smooth user experiences with attention to UI/UX design details.
 
-Currently, two official plugins are available:
+This portfolio is a reflection of my journey, showcasing the projects I have built, the technologies I use, and my commitment to clean, scalable, and interactive design. It highlights my work in both individual and collaborative projects, with a focus on performance, accessibility, and design aesthetics.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Portfolio Overview
 
-## Expanding the ESLint configuration
+This web portfolio includes:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-  A clean and modern design inspired by developer-centric themes  
+-  A projects section with detailed case studies and demos  
+-  A short introduction, skills stack, and tools I use  
+-  A contact section with my social links  
+-  Fully responsive across mobile, tablet, and desktop
+
+I built this portfolio using **React.js** and **SCSS**, with a focus on **performance, accessibility**, and **developer-friendly code structure**.
+
+## Purpose
+
+The goal of this portfolio is to present myself professionally to recruiters, hiring managers, and collaborators — giving them a quick look into who I am, what I build, and how I approach front-end development.
+
+---
+
+Feel free to explore the site and reach out for opportunities!
+
+> Designed & Developed by **Jai Hari Nataraj**  
+> © 2025 All Rights Reserved
