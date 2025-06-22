@@ -1,15 +1,5 @@
 export const projects = [
     {
-        proName: "ROAS Insight Suite (DKTP)",
-        video: "https://youtu.be/2T8EHB4MPZU?feature=shared",
-        thumbmail: "/project-thumbnails/ROAS.svg",
-        techStack: ["React", "Redux ToolKit", "Router", "SCSS"],
-        about:
-            "ROAS Insight Suite is a web app offering interactive data visualizations and advanced filtering for ad campaign analysis. It helps marketers track metrics like Impressions, Clicks, CTR, and Spend to improve performance and maximize Return on Ad Spend effectively. (Optimized for DKTP: Desktop Keyboard, Trackpad, or Pointer devices.)",
-        preview: "https://roas-insight-suite.vercel.app/",
-        github: "https://github.com/ijaihari/ROAS-Insight-Suite"
-    },
-    {
         proName: "Atlys Visa Platform",
         video: "https://youtu.be/ppAFv7z6UY0",
         thumbmail: "/project-thumbnails/Atlys.svg",
@@ -18,6 +8,16 @@ export const projects = [
             "Atlys Visa Platform is a front-end replica designed with a clean, responsive interface. It simulates visa exploration and application flows using structured components, ensuring smooth navigation, scalable styling, and an intuitive user experience across multiple devices and screen sizes.",
         preview: "https://atlys-clone.vercel.app/",
         github: "https://github.com/ijaihari/Atlys-Clone"
+    },
+    {
+        proName: "ROAS Insight Suite (DKTP)",
+        video: "https://youtu.be/2T8EHB4MPZU?feature=shared",
+        thumbmail: "/project-thumbnails/ROAS.svg",
+        techStack: ["React", "Redux ToolKit", "Router", "SCSS"],
+        about:
+            "ROAS Insight Suite is a web app offering interactive data visualizations and advanced filtering for ad campaign analysis. It helps marketers track metrics like Impressions, Clicks, CTR, and Spend to improve performance and maximize Return on Ad Spend effectively. (Optimized for DKTP: Desktop Keyboard, Trackpad, or Pointer devices.)",
+        preview: "https://roas-insight-suite.vercel.app/",
+        github: "https://github.com/ijaihari/ROAS-Insight-Suite"
     },
     {
         proName: "TheBlog Media",

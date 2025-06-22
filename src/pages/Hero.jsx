@@ -4,7 +4,7 @@ import '../styles/hero.scss';
 import { FaFile, FaLinkedin, FaGithub } from "react-icons/fa6";
 
 function Hero() {
-    const latestProject = projects[1].preview;
+    const latestProject = projects[0].preview;
 
     const greetings = [
         "'Hello World'",
