@@ -27,7 +27,7 @@ function Certificates() {
 
             <section className="cert-links">
               <button className="cert-link-btn" onClick={() => handleClick(cert.certLink)}>
-               <PiCertificateFill /> View Certificate
+               <PiCertificateFill /> View Credentials
               </button>
             </section>
           </section>
