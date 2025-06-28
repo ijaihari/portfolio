@@ -70,19 +70,6 @@
     justify-content: center;
     gap: 10px;
 
-    /*  h3 {
-        font-family: "Rubik", sans-serif;
-        @include mixins.textoutline;
-        font-size: 3rem;
-        font-weight: bold;
-        height: 4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-bottom: 5px;
-    } */
-
     h3 {
         font-family: "Rubik", sans-serif;
         @include mixins.textoutline;
@@ -103,7 +90,8 @@
     h1 {
         font-size: 4.5rem;
         font-weight: bold;
-        background: linear-gradient(to right, #943dff 0%, #cf13bf 44%, #d911a9 64%, #ef377f 100%);
+         background: linear-gradient(to right, #943dff 0%, #cf13bf 44%, #d911a9 64%, #ef377f 100%);
+        /* background: linear-gradient(-225deg, white 0%, #EACCF8 48%, #6654F1 100%); */
         @include mixins.gradienttext;
     }
 
@@ -200,7 +188,7 @@
 
         &:hover {
             border: none;
-      box-shadow: inset 0px 5px 10px #80808066;
+            box-shadow: inset 0px 5px 10px #80808066;
         }
     }
 }
