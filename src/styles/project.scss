@@ -39,23 +39,22 @@
     border-radius: 35px 35px 30px 30px;
     color: white;
     background-color: #0F0F13;
-    border: 1px solid #8080801d;
+    border: none;
+    box-shadow: inset 0px 2px 10px #8080801a;
     position: relative;
-    transition: transform 0.3s ease;
+    transition: all 0.5s ease;
 
     &:hover {
         cursor: pointer;
         transform: scale(1.03);
-        box-shadow: inset 0px 5px 5px #80808033;
 
-        /* box-shadow:
-            inset 2px 0 15px rgba(115, 0, 255, 0.4), //L
-            inset -2px 0 15px rgba(255, 0, 195, 0.4), //R
-            inset 0 2px 15px rgba(76, 123, 231, 0.4), //T
-            inset 0 -2px 15px rgba(255, 0, 98, 0.4); //B */
         .pro-title {
             background: linear-gradient(to right, #852BF5 0%, #cf13bf 15%, #d911a9 40%, #ef377f 55%);
             @include mixins.gradienttext;
+        }
+
+        .pro-about {
+            color: white;
         }
     }
 
@@ -77,7 +76,7 @@
         position: absolute;
         top: 18px;
         right: 18px;
-        font-size: 1.3rem;
+        font-size: 1rem;
         display: flex;
         place-content: center;
         padding: 8px;
@@ -85,7 +84,8 @@
         background-color: #0f0f1388;
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
-        border: 1px solid #ffffff1a;
+        border: none;
+        box-shadow: inset 0px 2px 5px #80808066;
         color: white;
         z-index: 1;
 
@@ -160,21 +160,15 @@
         font-size: 1rem;
         font-weight: 600;
         border-radius: 2rem;
-        border: 1px solid #8080801d;
+        border: none;
+        box-shadow: inset 0px 2px 5px #80808066;
         color: white;
         background-color: #1e1e2c86;
-        transition: all 0.3s ease;
+        transition: all 0.5s ease;
         padding: 10px 15px;
 
         &:hover {
-            &:first-child {
-                color: white;
-                background-color: royalblue;
-            }
-
-            background-color: white;
-            color: black;
-
+            box-shadow: inset 0px 5px 10px #80808066;
         }
     }
 }

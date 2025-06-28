@@ -32,25 +32,25 @@
 .cert-container {
     height: 380px;
     background-color: #0F0F13;
-    border: 1px solid #8080801d;
+    border: none;
+    box-shadow: inset 0px 2px 10px #8080801a;
     border-radius: 35px;
     color: white;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 
     &:hover {
         cursor: pointer;
+        transform: scale(1.03);
 
         .cert-title {
             background: linear-gradient(to right, #852BF5 0%, #cf13bf 15%, #d911a9 40%, #ef377f 55%);
             @include mixins.gradienttext;
         }
 
-        transform: scale(1.03);
-        box-shadow: inset 0px 5px 10px #80808033;
     }
 
     .thumbnail {
@@ -104,12 +104,12 @@
             border-radius: 2rem;
             color: white;
             background-color: #1e1e2c86;
-            border: 1px solid #8080801d;
+            border: none;
+            box-shadow: inset 0px 2px 5px #80808066;
             transition: all 0.3s ease;
 
             &:hover {
-                background-color: white;
-                color: black;
+                box-shadow: inset 0px 5px 10px #80808066;
             }
         }
     }

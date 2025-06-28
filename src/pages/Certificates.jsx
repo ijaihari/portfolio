@@ -9,7 +9,7 @@ const handleClick = (url) => {
 function Certificates() {
   return (
     <div className="section scroll-offset" id='achiev'>
-      <h1 className="title">Achievements & Certifications</h1>
+      <h1 className="title">Milestones & Credentials</h1>
       <section className="cert-section">
         {certificates.map((cert, index) => (
           <section className="cert-container" key={index}>

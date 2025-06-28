@@ -113,10 +113,10 @@
       color: white;
       padding: 10px 15px;
       font-size: 1rem;
-      border-radius: 10px;
+      border-radius: 1rem;
       outline: none;
       width: 100%;
-      transition: border-color 0.3s ease;
+      transition: border-color 0.5s ease;
 
       &:focus {
         border-color: var.$color-btn-background;
@@ -136,14 +136,14 @@
       font-weight: 600;
       background-color: var.$color-btn-background;
       color: white;
-      border: 1px solid #8080801d;
-      border-radius: 10px;
+      border: none;
+      box-shadow: inset 0px 2px 5px #80808066;
+      border-radius: 1rem;
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: all 0.5s ease;
 
       &:hover {
-        background-color: white;
-        color: black;
+        box-shadow: inset 0px 5px 10px #80808066
       }
 
       @media (max-width: 768px) {

@@ -11,7 +11,7 @@ const handleClick = (url) => {
 function Projects() {
     return (
         <div className="section scroll-offset" id='projects'>
-            <h1 className="title">Projects</h1>
+            <h1 className="title">Featured Projects</h1>
             <section className="pro-section">
                 {projects.map((project, index) => (
                     <section className="pro-container" key={index}>

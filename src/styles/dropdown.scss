@@ -22,7 +22,8 @@
     background-color: #0f0f1388;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid #ffffff1a;
+    border: none;
+    box-shadow: inset 0px 3px 10px #80808066;
     overflow: hidden;
     display: flex;
     flex-direction: column;
