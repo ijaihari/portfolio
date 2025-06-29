@@ -90,8 +90,12 @@
     h1 {
         font-size: 4.5rem;
         font-weight: bold;
-         background: linear-gradient(to right, #943dff 0%, #cf13bf 44%, #d911a9 64%, #ef377f 100%);
-        /* background: linear-gradient(-225deg, white 0%, #EACCF8 48%, #6654F1 100%); */
+        /* background: linear-gradient(to right, #943dff 0%, #cf13bf 44%, #d911a9 64%, #ef377f 100%); */
+        background: -webkit-linear-gradient(to right, #943dff 0%, #cf13bf 44%, #d911a9 64%, #ef377f 100%);
+        background: -moz-linear-gradient(to right, #943dff 0%, #cf13bf 44%, #d911a9 64%, #ef377f 100%);
+        background: -o-linear-gradient(to right, #943dff 0%, #cf13bf 44%, #d911a9 64%, #ef377f 100%);
+        background: -ms-linear-gradient(to right, #943dff 0%, #cf13bf 44%, #d911a9 64%, #ef377f 100%);
+        background: linear-gradient(to right, #943dff 0%, #cf13bf 44%, #d911a9 64%, #ef377f 100%);
         @include mixins.gradienttext;
     }
 
