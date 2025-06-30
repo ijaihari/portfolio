@@ -39,7 +39,8 @@
 
     h3 {
       font-size: 2.5rem;
-      background: linear-gradient(to right, #852BF5 0%, #cf13bf 10%, #d911a9 15%, #ef377f 25%);
+     /*  background: linear-gradient(to right, #852BF5 0%, #cf13bf 10%, #d911a9 15%, #ef377f 25%); */
+     background: linear-gradient(to right, #fef3bd 0%, #f58a5c 15%, #b24dcb 35%);
       @include mixins.gradienttext;
 
       @media (max-width: 768px) {
@@ -57,7 +58,8 @@
     h3 {
       font-size: 2.5rem;
       padding-bottom: 10px;
-      background: linear-gradient(to right, #852BF5 0%, #cf13bf 10%, #d911a9 15%, #ef377f 20%);
+      /* background: linear-gradient(to right, #852BF5 0%, #cf13bf 10%, #d911a9 15%, #ef377f 20%); */
+      background: linear-gradient(to right, #fef3bd 0%, #f58a5c 10%, #b24dcb 20%);
       @include mixins.gradienttext;
 
       @media (max-width: 768px) {

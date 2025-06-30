@@ -47,7 +47,8 @@
         transform: scale(1.03);
 
         .cert-title {
-            background: linear-gradient(to right, #852BF5 0%, #cf13bf 15%, #d911a9 40%, #ef377f 55%);
+            /* background: linear-gradient(to right, #852BF5 0%, #cf13bf 15%, #d911a9 40%, #ef377f 55%); */
+            background: linear-gradient(to right, #fef3bd 0%, #f58a5c 15%, #b24dcb 50%);
             @include mixins.gradienttext;
         }
 
@@ -72,12 +73,6 @@
         margin-top: 10px;
         font-weight: bold;
         padding: 0 5px;
-
-        &:hover {
-            background: linear-gradient(to right, #852BF5 0%, #cf13bf 15%, #d911a9 40%, #ef377f 55%);
-            @include mixins.gradienttext;
-        }
-
     }
 
     .cert-issuer {

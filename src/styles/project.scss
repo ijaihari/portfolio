@@ -49,7 +49,8 @@
         transform: scale(1.03);
 
         .pro-title {
-            background: linear-gradient(to right, #852BF5 0%, #cf13bf 15%, #d911a9 40%, #ef377f 55%);
+          /*   background: linear-gradient(to right, #852BF5 0%, #cf13bf 15%, #d911a9 40%, #ef377f 55%); */
+          background: linear-gradient(to right, #fef3bd 0%, #f58a5c 20%, #b24dcb 50%);
             @include mixins.gradienttext;
         }
 

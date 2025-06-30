@@ -197,7 +197,7 @@
         &__title {
             font-size: 2.5rem;
             padding-bottom: 10px;
-            background: linear-gradient(to right, #852BF5 0%, #cf13bf 10%, #d911a9 15%, #ef377f 20%);
+           background: linear-gradient(to right, #fef3bd 0%, #f58a5c 10%, #b24dcb 25%);
             @include mixins.gradienttext;
 
             @media (max-width: 768px) {
@@ -218,7 +218,8 @@
                 color: white;
 
                 .highlight {
-                    background: linear-gradient(to right, #852BF5 0%, #cf13bf 10%, #d911a9 15%, #ef377f 20%);
+                   /*  background: linear-gradient(to right, #852BF5 0%, #cf13bf 10%, #d911a9 15%, #ef377f 20%); */
+                   background: linear-gradient(to right, #fef3bd 0%, #f58a5c 40%, #b24dcb 90%);
                     @include mixins.gradienttext;
                 }
             }
