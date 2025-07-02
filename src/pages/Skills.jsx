@@ -12,7 +12,7 @@ function Skills() {
                         return (
                             <span key={index} className="skill-tab">
                                 <SkillIcon />
-                                <p>{skill.text}</p>
+                                <p>{skill.text}</p> 
                             </span>
                         );
                     })
