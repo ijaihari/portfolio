@@ -59,7 +59,7 @@ function Hero() {
                 </section>
 
                 <section className="hero-links">
-                    <a href="/pdfs/JaiHari-FrontEnd-Resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href="/pdfs/JaiHari_FrontEnd_Resume.pdf" target="_blank" rel="noopener noreferrer">
                         <button><FaFile /> Resume</button>
                     </a>
                     <a href="https://www.linkedin.com/in/ijaihari/" target="_blank" rel="noopener noreferrer">
