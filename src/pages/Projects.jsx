@@ -32,7 +32,7 @@ function Projects() {
                             ))}
                         </section>
                         <section className="pro-title">
-                            <h4>{project.proName}</h4>
+                            <a href={project.preview} target='_blank'><h4>{project.proName}</h4></a>
                         </section>
                         <section className="pro-about">
                             <p>{project.about}</p>
