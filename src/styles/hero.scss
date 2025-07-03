@@ -91,7 +91,8 @@
         font-size: 4.5rem;
         font-weight: bold;
         /* background: linear-gradient(to right, #943dff 0%, #cf13bf 44%, #d911a9 64%, #ef377f 100%); */
-        background: linear-gradient(to right, #fef3bd 0%, #f58a5c 50%, #b24dcb 85%);
+        /*         background: linear-gradient(to right, #fef3bd 0%, #f58a5c 50%, #b24dcb 85%); */
+        background: linear-gradient(97deg, #0096FF, #BB64FF 42%, #F2416B 74%, #EB7500);
         @include mixins.gradienttext;
     }
 

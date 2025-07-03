@@ -84,7 +84,6 @@
                     border-radius: 1rem;
                     color: white;
                     border: 2px solid #00bb4e;
-                    background-color: #083C24;
                 }
             }
         }
@@ -96,11 +95,11 @@
         border-radius: 2rem;
         background-color: var.$color-background-secondary;
         @include mixins.border;
-        color: grey;
+        color: #CCCCCC;
 
         h3 {
             color: white;
-            font-size: 1.5rem;
+            font-size: 1.9rem;
             text-align: center;
             padding-bottom: 10px;
         }
@@ -138,8 +137,10 @@
 
         &__title {
             font-size: 2.5rem;
-            background: linear-gradient(to right, #852BF5 0%, #cf13bf 10%, #d911a9 15%, #ef377f 20%);
-            @include mixins.gradienttext;
+            padding-bottom: 10px;
+            color: white;
+            /* background: linear-gradient(to right, white 0%, grey 30%);
+            @include mixins.gradienttext; */
 
             @media (max-width: 768px) {
                 font-size: 1.8rem;
@@ -151,33 +152,38 @@
             padding: 20px;
             border-radius: 2rem;
             background-color: var.$color-background-secondary;
-            border: none;
-            box-shadow: inset 0px 2px 10px #8080801a;
+            @include mixins.border;
+
+
 
             .role {
                 display: flex;
                 justify-content: space-between;
+
+                span {
+                    h3 {
+                        font-size: 1.5rem;
+                        padding-bottom: 5px;
+                        color: white;
+                    }
+                }
             }
 
-            h3 {
-                font-size: 1.5rem;
-                padding-bottom: 5px;
-                color: white;
-            }
+
 
             p {
                 font-size: 1.2rem;
-                color: grey;
+                color: #CCCCCC;
             }
         }
 
         .time {
             font-size: 1.2rem;
-            color: grey;
+            color: #CCCCCC;
         }
 
         .honor ul {
-            color: grey;
+            color: #CCCCCC;
 
             p {
                 font-size: 1.2rem;
@@ -196,14 +202,20 @@
 
     .edu {
         &__title {
-            font-size: 2.5rem;
             padding-bottom: 10px;
-            background: linear-gradient(to right, #fef3bd 0%, #f58a5c 10%, #b24dcb 25%);
-            @include mixins.gradienttext;
+            font-size: 2.5rem;
+            color: white;
+            /* background: linear-gradient(to right, white 0%, grey 30%);
+            @include mixins.gradienttext; */
 
             @media (max-width: 768px) {
                 font-size: 1.8rem;
             }
+        }
+
+        hr {
+            border: 1px solid var.$color-border;
+            margin-bottom: 10px;
         }
 
         &__details {
@@ -216,24 +228,18 @@
                 font-size: 1.5rem;
                 padding-bottom: 5px;
                 color: white;
-
-                .highlight {
-                    /*  background: linear-gradient(to right, #852BF5 0%, #cf13bf 10%, #d911a9 15%, #ef377f 20%); */
-                    background: linear-gradient(to right, #fef3bd 0%, #f58a5c 40%, #b24dcb 90%);
-                    @include mixins.gradienttext;
-                }
             }
 
             p {
                 text-align: justify;
                 font-size: 1.2rem;
-                color: grey;
+                color: #CCCCCC;
             }
 
             ul {
                 text-align: justify;
                 font-size: 1.2rem;
-                color: grey;
+                color: #CCCCCC;
 
                 p {
 

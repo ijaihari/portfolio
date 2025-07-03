@@ -7,7 +7,7 @@
   height: auto;
   margin: 50px auto;
   border-radius: 2rem;
-  padding: 50px;
+  padding: 40px;
   background-color: var.$color-background-secondary;
   @include mixins.border;
   display: flex;
@@ -23,6 +23,7 @@
   }
 
   @media (max-width: 425px) {
+    margin: 30px auto;
     width: 95%;
   }
 }
@@ -38,9 +39,9 @@
 
     h3 {
       font-size: 2.5rem;
-     /*  background: linear-gradient(to right, #852BF5 0%, #cf13bf 10%, #d911a9 15%, #ef377f 25%); */
-     background: linear-gradient(to right, #fef3bd 0%, #f58a5c 15%, #b24dcb 35%);
-      @include mixins.gradienttext;
+      /* background: linear-gradient(to right, white 0%, grey 30%);
+      @include mixins.gradienttext; */
+      color: white;
 
       @media (max-width: 768px) {
         font-size: 1.8rem;
@@ -57,9 +58,9 @@
     h3 {
       font-size: 2.5rem;
       padding-bottom: 10px;
-      /* background: linear-gradient(to right, #852BF5 0%, #cf13bf 10%, #d911a9 15%, #ef377f 20%); */
-      background: linear-gradient(to right, #fef3bd 0%, #f58a5c 10%, #b24dcb 20%);
-      @include mixins.gradienttext;
+      /* background: linear-gradient(to right, white 0%, grey 30%);
+      @include mixins.gradienttext; */
+      color: white;
 
       @media (max-width: 768px) {
         font-size: 1.8rem;
@@ -87,6 +88,8 @@
   width: 100%;
 
   h3 {
+    /* background: linear-gradient(to right, white 0%, grey 30%);
+    @include mixins.gradienttext; */
     color: white;
     font-size: 2.5rem;
     padding-bottom: 10px;
@@ -111,7 +114,7 @@
     input[type="email"],
     textarea {
       background-color: var.$color-background-secondary;
-    @include mixins.border;
+      @include mixins.border;
       color: white;
       padding: 10px 15px;
       font-size: 1rem;

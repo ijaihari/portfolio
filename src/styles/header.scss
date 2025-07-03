@@ -17,7 +17,7 @@
     backdrop-filter: blur(8px);
     font-size: 1.2rem;
     @include mixins.boxshadow;
-    @include mixins.border;
+    border: 1px solid #80808025;
     z-index: 111;
     width: auto;
 
