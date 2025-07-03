@@ -1,4 +1,5 @@
 @use '../styles/variables' as var;
+@use '../styles/mixins';
 
 .scroll-to-top {
     position: fixed;
@@ -17,8 +18,8 @@
     cursor: pointer;
     z-index: 999;
     transition: all 0.5s ease-in-out;
-    border: none;
-    box-shadow: inset 0px 3px 10px #80808066;
+    @include mixins.boxshadow;
+    @include mixins.border;
 
     @media (max-width:425px) {
         bottom: 20px;

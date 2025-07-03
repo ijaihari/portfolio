@@ -6,9 +6,11 @@
     padding: 30px 0;
     height: fit-content;
 }
-.title{
+
+.title {
     padding: 0px 20px;
 }
+
 .about-wrapper {
     display: flex;
     justify-content: center;
@@ -55,8 +57,7 @@
         padding: 8px;
         border-radius: 2rem;
         background-color: var.$color-background-secondary;
-        border: none;
-        box-shadow: inset 0px 2px 10px #8080801a;
+        @include mixins.border;
 
         @media (min-width:768px) and (max-width:850px) {
             gap: 5px;
@@ -93,12 +94,12 @@
         margin-top: 10px;
         padding: 20px 20px 10px;
         border-radius: 2rem;
-        border: none;
-        box-shadow: inset 0px 2px 10px #8080801a;
         background-color: var.$color-background-secondary;
-        color: white;
+        @include mixins.border;
+        color: grey;
 
         h3 {
+            color: white;
             font-size: 1.5rem;
             text-align: center;
             padding-bottom: 10px;
@@ -111,7 +112,7 @@
 
         ul {
             font-size: 1.2rem;
-            line-height: 1.5;
+            line-height: 1.4;
             text-align: justify;
             padding: 0 20px 10px;
         }
@@ -197,7 +198,7 @@
         &__title {
             font-size: 2.5rem;
             padding-bottom: 10px;
-           background: linear-gradient(to right, #fef3bd 0%, #f58a5c 10%, #b24dcb 25%);
+            background: linear-gradient(to right, #fef3bd 0%, #f58a5c 10%, #b24dcb 25%);
             @include mixins.gradienttext;
 
             @media (max-width: 768px) {
@@ -209,8 +210,7 @@
             padding: 20px;
             border-radius: 2rem;
             background-color: var.$color-background-secondary;
-            border: none;
-            box-shadow: inset 0px 2px 10px #8080801a;
+            @include mixins.border;
 
             .deg {
                 font-size: 1.5rem;
@@ -218,8 +218,8 @@
                 color: white;
 
                 .highlight {
-                   /*  background: linear-gradient(to right, #852BF5 0%, #cf13bf 10%, #d911a9 15%, #ef377f 20%); */
-                   background: linear-gradient(to right, #fef3bd 0%, #f58a5c 40%, #b24dcb 90%);
+                    /*  background: linear-gradient(to right, #852BF5 0%, #cf13bf 10%, #d911a9 15%, #ef377f 20%); */
+                    background: linear-gradient(to right, #fef3bd 0%, #f58a5c 40%, #b24dcb 90%);
                     @include mixins.gradienttext;
                 }
             }

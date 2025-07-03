@@ -1,3 +1,5 @@
+@use '../styles/variables' as var;
+
 @mixin gradienttext {
     background-clip: text;
     -webkit-background-clip: text;
@@ -22,4 +24,22 @@
     background: none;
     -webkit-background-clip: unset;
     -webkit-text-fill-color: whitesmoke;
+}
+
+@mixin boxshadow {
+    box-shadow: inset 0px 5px 10px #8080801d;
+}
+
+@mixin border {
+    border: 1px solid #8080800d;
+}
+
+@mixin btn {
+    background-color: #26263b30;
+    border: 1px solid #8080800d;
+
+    &:hover {
+        background-color: #F5F5F7;
+        color: black;
+    }
 }

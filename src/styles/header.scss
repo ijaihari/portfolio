@@ -16,9 +16,8 @@
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     font-size: 1.2rem;
-    border: none;
-    box-shadow: inset 0px 3px 10px #80808066;
-
+    @include mixins.boxshadow;
+    @include mixins.border;
     z-index: 111;
     width: auto;
 
@@ -53,18 +52,12 @@
             transition: all 0.5s ease;
 
             &:hover {
-                color: black;
-                background-color: white;
-                box-shadow: 0px 0px 5px grey;
+                @include mixins.btn
             }
 
             &:last-child {
-                background-color: white;
+                background-color: #F5F5F7;
                 color: black;
-
-                &:hover {
-                    box-shadow: 0px 0px 10px grey;
-                }
             }
         }
     }

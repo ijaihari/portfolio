@@ -170,25 +170,18 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
-        background-color: var.$color-background-secondary;
+        @include mixins.btn;
         color: white;
         font-size: 1.2rem;
         font-weight: 600;
         padding: 15px 35px;
         border-radius: 1rem;
-        border: none;
-        box-shadow: inset 0px 2px 5px #80808066;
-        transition: all 0.3s ease;
+        transition: all 0.5s ease;
 
         @media (min-width: 350px) and (max-width: 767px) {
             font-size: 1.2rem;
             font-weight: 400;
             padding: 15px;
-        }
-
-        &:hover {
-            border: none;
-            box-shadow: inset 0px 5px 10px #80808066;
         }
     }
 }
