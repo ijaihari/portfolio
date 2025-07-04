@@ -25,9 +25,10 @@ function About() {
                     </section>
                 </section>
                 <section className='experience'>
-                    {/* <section className='work'>
-                        <h3 className='work__title'>Experience</h3>
+                    {/* <section className='work'>   
                         <div className='work__job-wrapper'>
+                            <h3 className='work__title'>Experience</h3>
+                            <hr />
                             <div className='role'>
                                 <span>
                                     <h3>Front-End Developer </h3>
