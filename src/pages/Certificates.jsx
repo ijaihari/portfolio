@@ -13,9 +13,11 @@ function Certificates() {
       <section className="cert-section">
         {certificates.map((cert, index) => (
           <section className="cert-container" key={index}>
-            <section className="thumbnail">
-              <img className="cert-thumbnail" src={cert.thumbnail} alt={cert.certName} />
-            </section>
+            <a href={cert.certLink} target='_blank'>
+              <section className="thumbnail">
+                <img className="cert-thumbnail" src={cert.thumbnail} alt={cert.certName} />
+              </section>
+            </a>
 
             <section className="cert-title">
               <a href={cert.certLink}><h4>{cert.certName}</h4></a>
