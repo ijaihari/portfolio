@@ -47,12 +47,12 @@ function Hero() {
                 </section>
 
                 <section className="greetings">
-                    <h3 className={`fade-text ${fade ? 'fade-in' : 'fade-out'}`}>
+                    {/* <h3 className={`fade-text ${fade ? 'fade-in' : 'fade-out'}`}>
                         {greetings[index]}
-                    </h3>
-                    {/* <h3>
-                        {'Hello World'}
                     </h3> */}
+                    <h3>
+                        {'"Hello World"'}
+                    </h3>
                     <h1>I&apos;m JAI HARI NATARAJ</h1>
                     <h2>A Front-End Developer</h2>
                 </section>
