@@ -71,20 +71,16 @@
     gap: 10px;
 
     h3 {
-        font-family: "Rubik", sans-serif;
-        @include mixins.textoutline;
+        font-family: "Doto", sans-serif;
         font-size: 3rem;
-        font-weight: bold;
+        font-weight: 900;
         height: 4rem;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
         margin-bottom: 5px;
-
-        @media (max-width: 769px) {
-            @include mixins.removeTextOutline;
-        }
+        color: white;
     }
 
     h1 {
@@ -106,8 +102,8 @@
         margin-top: 30px;
 
         h3 {
-            font-size: 1.9rem;
-            height: 3rem;
+            font-size: 2.4rem;
+            height: 2.5rem;
         }
 
         h1 {

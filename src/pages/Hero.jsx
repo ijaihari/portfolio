@@ -5,33 +5,6 @@ import { FaFile, FaLinkedin, FaGithub } from "react-icons/fa6";
 
 function Hero() {
     const latestProject = projects[0].preview;
-
-    const greetings = [
-        "'Hello World'",
-        "உலகிற்கு வணக்கம்",
-        "' こんにちは世界 '",
-        "' مرحبا بالعالم '",
-        "' Hola Mundo '",
-        "' Bonjour le monde '",
-        "' Hallo Welt '",
-        "' 你好，世界 '",
-        "' Olá Mundo '"
-    ];
-
-    const [index, setIndex] = useState(0);
-    const [fade, setFade] = useState(true);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setFade(false);
-            setTimeout(() => {
-                setIndex((prev) => (prev + 1) % greetings.length);
-                setFade(true);
-            }, 300);
-        }, 2500);
-        return () => clearInterval(interval);
-    }, []);
-
     return (
         <div className="hero-section scroll-offset" id="hero">
             <div className="hero-wrapper">
@@ -47,11 +20,8 @@ function Hero() {
                 </section>
 
                 <section className="greetings">
-                    {/* <h3 className={`fade-text ${fade ? 'fade-in' : 'fade-out'}`}>
-                        {greetings[index]}
-                    </h3> */}
                     <h3>
-                        {'"Hello World"'}
+                        {"'Hello World'"}
                     </h3>
                     <h1>I&apos;m JAI HARI NATARAJ</h1>
                     <h2>A Front-End Developer</h2>
