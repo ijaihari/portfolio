@@ -72,7 +72,7 @@
       gap: 15px;
 
       a {
-       color: #cccccc;
+        color: #cccccc;
         font-size: 2rem;
         transition: color 0.3s ease;
 
@@ -143,6 +143,34 @@
       @media (max-width: 768px) {
         width: 100%;
       }
+    }
+  }
+}
+
+.contact-btn {
+  margin-top: 10px;
+  width: fit-content;
+  display: flex;
+  gap: 5px;
+
+  .em-send {
+    background-color: royalblue;
+  }
+
+  .wa-send {
+    color: black;
+    background-color: white;
+  }
+
+  a {
+    button {
+      color: white;
+      width: 100%;
+      border: none;
+      font-size: .85rem;
+      font-weight: 600;
+      padding: 10px 15px;
+      border-radius: 1rem;
     }
   }
 }
