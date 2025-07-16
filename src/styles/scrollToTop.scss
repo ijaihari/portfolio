@@ -19,16 +19,17 @@
     z-index: 999;
     transition: all 0.5s ease-in-out;
     @include mixins.boxshadow;
-    @include mixins.border;
+    border: 1px solid grey;
 
     @media (max-width:425px) {
         bottom: 20px;
-        right: 20px;
+        right: 10px;
     }
 
     &:hover {
         transform: scale(1.1);
         color: black;
+        border-color: white;
         background-color: white;
     }
 

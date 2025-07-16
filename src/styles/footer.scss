@@ -7,7 +7,7 @@
     .footer-wrapper {
         color: white;
         border-top: 1px solid var.$color-border;
-        padding: 10px 0px;
+        padding: 8px 0px;
         text-align: center;
         font-size: 1rem;
     }
@@ -16,9 +16,10 @@
 .profile-link {
     color: white;
     font-weight: 600;
+    text-decoration: underline;
 
     &:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
 
