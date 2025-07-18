@@ -5,6 +5,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/meldina');
 
 * {
   margin: 0px;
@@ -35,6 +36,7 @@ a {
 }
 
 .title {
+  letter-spacing: -2px;
   text-transform: uppercase;
   padding-bottom: 2rem;
   color: white;
