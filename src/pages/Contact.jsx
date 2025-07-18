@@ -17,7 +17,7 @@ function Contact() {
                         <p>Phone: 9843273540</p>
                         <div className='contact-btn'>
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sjaiharinataraj@gmail.com" target='_blank'>
-                                <button className='em-send'>Send a Email</button>
+                                <button className='em-send'>Email Me</button>
                             </a>
                             <a href="https://api.whatsapp.com/send/?phone=919843273540&text&type=phone_number&app_absent=0" target='_blank'>
                                 <button className='wa-send'>Chat on WhatsApp</button>
