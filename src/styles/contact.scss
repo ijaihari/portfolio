@@ -150,40 +150,32 @@
 .contact-btn {
   margin-top: 10px;
   width: fit-content;
-  display: flex;
-  gap: 5px;
 
-  .em-send {
+  .x-send {
     transition: all 0.3s ease;
+    color: white;
     background-color: royalblue;
 
     &:hover {
-      background-color: #2649b1;
+      background-color: #2a4fc0;
     }
   }
 
-  .wa-send {
-    color: black;
-    background-color: white;
-    transition: all 0.3s ease;
 
-    &:hover {
-      color: white;
-      background-color: #25D366;
-    }
-  }
 
   a {
     button {
       color: white;
       width: 100%;
       border: none;
-      font-size: .85rem;
+      font-size: .9rem;
       font-weight: 600;
-      padding: 10px 15px;
+      padding: 10px 20px;
       border-radius: 1rem;
 
-
+      display: flex;
+      align-items: center;
+      gap: 5px;
     }
   }
 }

@@ -16,13 +16,16 @@ function Contact() {
                         </a>
                         <p>Phone: 9843273540</p>
                         <div className='contact-btn'>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sjaiharinataraj@gmail.com" target='_blank'>
-                                <button className='em-send'>Email Me</button>
-                            </a>
-                            <a href="https://api.whatsapp.com/send/?phone=919843273540&text&type=phone_number&app_absent=0" target='_blank'>
-                                <button className='wa-send'>Chat on WhatsApp</button>
+                            <a
+                                href="https://twitter.com/messages/compose?recipient_id=1477817555188211712"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <button className="x-send">Message Me on <FaXTwitter /></button>
                             </a>
                         </div>
+
+
                     </section>
                     <section className="social-wrapper">
                         <h3>Social</h3>
@@ -30,7 +33,6 @@ function Contact() {
                             <a href="https://www.linkedin.com/in/ijaihari/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
                             <a href="https://github.com/ijaihari" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
                             <a href="https://x.com/ijaihari" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a>
-                            <a href="https://www.instagram.com/ijaihari" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                         </section>
                     </section>
 
