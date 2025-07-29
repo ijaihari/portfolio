@@ -49,7 +49,7 @@ function About() {
                         <div className='edu__details'>
                             <h3 className='edu__title'>Education</h3>
                             <hr />
-                            <h3 className='deg'>Bachelor of Engineering EEE (2024) / <span className='highlight'>CGPA 8.82 (FWD)</span></h3>
+                            <h3 className='deg'>Bachelor of Engineering EEE (2024) / <span className='highlight'>CGPA 8.82</span></h3>
                             <p>Anna University, AAA college of Engineering & Technology</p>
                             <ul>
                                 <p className='acti'>Activites</p>
