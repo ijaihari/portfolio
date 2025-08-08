@@ -1,5 +1,5 @@
 import '../styles/contact.scss';
-import { FaLinkedin, FaGithub, FaXTwitter, FaInstagram } from "react-icons/fa6";
+import { FaLinkedin, FaGithub, FaXTwitter } from "react-icons/fa6";
 
 function Contact() {
 
@@ -45,7 +45,7 @@ function Contact() {
                         method="POST"
                     >
                         <input type="hidden" name="access_key" value="43f8ee79-e6d0-43b2-a0d9-245a0546b9e1" />
-                        <input type="hidden" name="redirect" value="https://ijaihari.vercel.app/thankyou" />
+                        <input type="hidden" name="redirect" value="https://ijaihari/thankyou" />
                         <input type="hidden" name="subject" value="New message from portfolio" />
 
 
