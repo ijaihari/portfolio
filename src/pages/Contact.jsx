@@ -45,7 +45,7 @@ function Contact() {
                         method="POST"
                     >
                         <input type="hidden" name="access_key" value="43f8ee79-e6d0-43b2-a0d9-245a0546b9e1" />
-                        <input type="hidden" name="redirect" value="https://ijaihari/thankyou" />
+                        <input type="hidden" name="redirect" value="https://jaihari.dev/thankyou" />
                         <input type="hidden" name="subject" value="New message from portfolio" />
 
 
