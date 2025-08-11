@@ -81,7 +81,7 @@
         text-align: center;
         letter-spacing: -2px;
         margin-bottom: 5px;
-        color: white;
+        color: #ccc;
     }
 
     h1 {
@@ -90,15 +90,16 @@
         letter-spacing: -2px;
         /* background: linear-gradient(to right, #943dff 0%, #cf13bf 44%, #d911a9 64%, #ef377f 100%); */
         /*         background: linear-gradient(to right, #fef3bd 0%, #f58a5c 50%, #b24dcb 85%); */
-        background: linear-gradient(97deg, #0096FF, #BB64FF 42%, #F2416B 74%, #EB7500);
-        @include mixins.gradienttext;
+        color: white;
     }
 
     h2 {
         font-size: 3rem;
         letter-spacing: -2px;
         font-weight: 600;
-        color: white;
+        background: linear-gradient(97deg, #0096FF, #BB64FF 42%, #F2416B 74%, #EB7500);
+        @include mixins.gradienttext;
+
     }
 
     @media (max-width: 480px) {
@@ -110,7 +111,7 @@
         }
 
         h1 {
-            
+
             font-size: 3.3rem;
             text-align: center;
         }
@@ -141,11 +142,12 @@
 }
 
 .about {
-    color: #ffffff8f;
-    font-size: 1.2rem;
+    color: #ccc;
+    font-size: 1.1rem;
     margin-top: 20px;
     line-height: 1.5;
     text-align: center;
+    font-style: italic;
 
     @media (min-width: 350px) and (max-width: 570px) {
         text-align: justify;

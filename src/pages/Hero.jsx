@@ -28,7 +28,7 @@ function Hero() {
                 </section>
 
                 <section className="about">
-                    <p>The Future is Coded.</p>
+                    <p>Design Like Stark, Debug Like Jarvis</p>
                 </section>
 
                 <section className="hero-links">
