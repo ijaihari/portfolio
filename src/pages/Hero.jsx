@@ -35,7 +35,7 @@ function Hero() {
                     <a href="/pdfs/JaiHari_FrontEnd_Resume.pdf" target="_blank" rel="noopener noreferrer">
                         <button><FaFile /> Resume</button>
                     </a>
-                    <a href="https://www.linkedin.com/in/ijaihari/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/jaihari/" target="_blank" rel="noopener noreferrer">
                         <button><FaLinkedin /> LinkedIn</button>
                     </a>
                     <a href="https://github.com/ijaihari" target="_blank" rel="noopener noreferrer">
