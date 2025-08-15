@@ -1,18 +1,16 @@
 @use './styles/variables' as var;
 @use './styles/mixins';
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/meldina');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
- /*  font-family: "Geist", sans-serif; */
+  /*  font-family: "Geist", sans-serif; */
   scroll-behavior: smooth;
 }
 
