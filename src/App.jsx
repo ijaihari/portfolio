@@ -9,7 +9,7 @@ import Hero from "./pages/Hero";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import ThankYou from "./pages/ThankYou";
-
+import { Analytics } from "@vercel/analytics/react"
 function App() {
   return (
     <>
@@ -17,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={
           <div className="app-container">
+            <Analytics />
             <Header />
             <Hero />
             <About />
