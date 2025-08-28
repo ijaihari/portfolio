@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { projects } from '../data/projects';
 import '../styles/hero.scss';
 import { FaFile, FaLinkedin, FaGithub } from "react-icons/fa6";
@@ -32,7 +31,7 @@ function Hero() {
                 </section>
 
                 <section className="hero-links">
-                    <a href="/pdfs/JaiHari_FrontEnd_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href="/pdfs/JaiHari-FrontEnd-Resume.pdf" target="_blank" rel="noopener noreferrer">
                         <button><FaFile /> Resume</button>
                     </a>
                     <a href="https://www.linkedin.com/in/jaihari/" target="_blank" rel="noopener noreferrer">

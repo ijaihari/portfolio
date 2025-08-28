@@ -32,6 +32,6 @@ export const certificates = [
     organization: "AAA College of Engg. & Tech.",
     issued: "2023",
     thumbnail: "/certificates/rank.svg",
-    certLink: "https://drive.google.com/file/d/1DZN1RjTXgXPa9N4uzDl_QCZ1aVG4311R/view?usp=sharing",
+    certLink: "https://drive.google.com/file/d/1tzU9cgSWoeoEtVMUz-omV8jNGqxJ92TJ/view?usp=sharing",
   },
 ];
