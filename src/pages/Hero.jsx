@@ -23,11 +23,11 @@ function Hero() {
                         {"'Hello World'"}
                     </h3>
                     <h1>I&apos;m JAI HARI NATARAJ</h1>
-                    <h2>A Front-End Developer</h2>
+                    <h2>A Front End Developer</h2>
                 </section>
 
                 <section className="about">
-                    <p>Design Like Stark, Debug Like Jarvis</p>
+                    <p>"Design Like Stark, Debug Like Jarvis"</p>
                 </section>
 
                 <section className="hero-links">

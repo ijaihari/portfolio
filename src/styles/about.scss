@@ -102,6 +102,7 @@
             font-size: 1.9rem;
             text-align: center;
             padding-bottom: 10px;
+            font-weight: 600;
 
             @media (max-width: 768px) {
                 font-size: 1.8rem;
@@ -140,6 +141,8 @@
         margin-bottom: 10px;
 
         &__title {
+            font-weight: 600;
+            letter-spacing: -2px;
             font-size: 2rem;
             padding-bottom: 10px;
             color: white;
@@ -211,6 +214,7 @@
 
     .edu {
         &__title {
+            font-weight: 600;
             padding-bottom: 10px;
             font-size: 2rem;
             color: white;
@@ -233,6 +237,8 @@
 
             .deg {
                 font-size: 1.5rem;
+                font-weight: 600;
+                
                 padding-bottom: 5px;
                 color: white;
             }
