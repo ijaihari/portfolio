@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { CgMenuHotdog } from "react-icons/cg";
+import { HiMenuAlt4 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import '../styles/header.scss';
 import DropDownNav from '../components/DropDownNav';
@@ -25,7 +25,7 @@ function Header() {
       </section>
 
       <button className="sandmenu" onClick={() => setDropmenu(!dropmenu)}>
-        {dropmenu ? <IoClose /> : <CgMenuHotdog />}
+        {dropmenu ? <IoClose /> : <HiMenuAlt4 />}
       </button>
 
       {dropmenu && <DropDownNav onClose={() => setDropmenu(false)} />}

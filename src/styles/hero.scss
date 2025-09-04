@@ -21,7 +21,13 @@
 
 .hero-section {
     padding: 100px 0;
-    background-color: var.$color-background-primary;
+     background:
+    radial-gradient(ellipse 120% 80% at 70% 20%, rgba(255, 20, 147, 0.15), transparent 50%),
+    radial-gradient(ellipse 100% 60% at 30% 10%, rgba(0, 255, 255, 0.12), transparent 60%),
+    radial-gradient(ellipse 90% 70% at 50% 0%, rgba(138, 43, 226, 0.18), transparent 65%),
+    radial-gradient(ellipse 110% 50% at 80% 30%, rgba(255, 215, 0, 0.08), transparent 40%),
+    #000000;
+   /*  background-color: var.$color-background-primary; */
 
     @media (min-width: 350px) and (max-width: 426px) {
         padding: 80px 0px 30px;
@@ -48,7 +54,7 @@
 
     .gradient-button {
         color: white;
-        background-color: var.$color-background-secondary;
+        background-color: #0A0A0A;
         font-style: italic;
         font-size: 0.9rem;
         font-weight: 600;
@@ -81,7 +87,7 @@
         text-align: center;
         letter-spacing: -2px;
         margin-bottom: 5px;
-        color: #ccc;
+        color: #e8e8e8;
     }
 
     h1 {
@@ -118,7 +124,7 @@
         }
 
         h2 {
-            font-size: 2rem;
+            font-size: 2.1rem;
             text-align: center;
         }
     }
@@ -151,7 +157,7 @@
         text-align: center;
 
         @media (min-width: 350px) and (max-width: 570px) {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             text-align: justify;
         }
     }

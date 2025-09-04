@@ -31,10 +31,11 @@
     align-items: center;
     gap: 10px;
     color: white;
+    background-color: var.$color-background-secondary;
     font-size: 1.2rem;
     font-weight: 400;
-    @include mixins.btn;
     padding: 15px 15px;
+    border: 1px solid #8080800d;
     border-radius: 1rem;
     transition: all 0.5s ease;
 }
