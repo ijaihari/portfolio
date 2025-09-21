@@ -17,7 +17,7 @@ export const skills = [
   { si: SiGit, text: "Git" },
   { si: SiGithub, text: "GitHub" },
   { si: SiFigma, text: "Figma" },
-  { si: SiAdobeillustrator, text: "Illustrator" },
+  /* { si: SiAdobeillustrator, text: "Illustrator" }, */
   { si: SiVite, text: "Vite" },
   { si: SiNpm, text: "npm" },
   { si: SiBabel, text: "Babel" },
