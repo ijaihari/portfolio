@@ -1,5 +1,5 @@
 import '../styles/contact.scss';
-import { FaLinkedin, FaGithub, FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin, FaGithub,FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 function Contact() {
 
@@ -32,6 +32,7 @@ function Contact() {
                         <section className="social-links">
                             <a href="https://www.linkedin.com/in/ijaihari/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
                             <a href="https://github.com/ijaihari" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+                            <a href="https://instagram.com/ijaihari" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                             <a href="https://x.com/ijaihari" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a>
                         </section>
                     </section>
